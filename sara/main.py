@@ -1,12 +1,13 @@
 # gertrude.sara.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto 
 
-linkBackdropCena2 = "http://s2.glbimg.com/yX02WqYevO4ETQxDkX8ReUFLfKk=/s.glbimg.com/jo/g1/f/original/2014/12/22/onibus-nathalia.jpg"
+linkbackdropcena2 = "http://s2.glbimg.com/yX02WqYevO4ETQxDkX8ReUFLfKk=/s.glbimg.com/jo/g1/f/original/2014/12/22/onibus-nathalia.jpg"
+linkp
 
-def BackdropCena2():
-  	cenaponto = Cena (img = linkBackdropCena2)
+def cackdropcena2():
+  	cenaponto = Cena (img = linkbackdropcena2)
   	cenaponto.vai()
-BackdropCena2()
+backdropcena2()
   
   
   
