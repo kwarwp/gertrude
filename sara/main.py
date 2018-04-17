@@ -7,7 +7,7 @@ linkpersonagem = "https://vignette.wikia.nocookie.net/cartoonnetwork/images/4/48
 def backdropcena2():
   	cenaponto = Cena (img = linkbackdropcena2)
   
-  	personagem = Elemento (img = linkpersonagem, tit="garotinho", style = dict(left= 150, top=40, width=60, height=200))
+  	personagem = Elemento (img = linkpersonagem, tit="garotinho", style = dict(left= 150, top=100, width=60, height=200))
   	personagem.entra(cenaponto)
   	txtpersonagem = Texto(cenaponto, "e agora?")
   	personagem.vai = txtpersonagem.vai
