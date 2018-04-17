@@ -12,7 +12,7 @@ class Cena2():
 
   def vai(self, *_):
     self.cena.vai()    
-  def connectEsquerda(self, cena, *_):
-    self.cenaEsquerda.vai = cena.vai
-  def connectDireita(self, cena, *_):
-    self.cenaDireita.vai = cena.vai
+  def connectEsquerda(self, cena):
+    self.cenaEsquerda = cena
+  def connectDireita(self, cena):
+    self.cenaDireita = cena
