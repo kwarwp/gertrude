@@ -8,9 +8,9 @@ class Cena1():
     from meredith.main import Cena2
     self.cena1 = Cena(img = linkIMG)
     cena2 = Cena2()
-    cena1.direita = cena2
+    self.cena1.direita = cena2
 
-    cena1.vai()
+    self.cena1.vai()
   def vai(self, *_):
     self.cena1.vai()
 
