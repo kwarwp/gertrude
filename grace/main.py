@@ -8,7 +8,7 @@ class Cena2():
     linkOlho = "http://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/512/eye-icon.png"
 
     self.cena = Cena(img = linkIMG)
-    olho = Elemento(img = linkOlho, style = dict(top = '400', left = '400'))
+    olho = Elemento(img = linkOlho, style = dict(top = '10', left = '10'))
 
   def vai(self, *_):
     self.cena.vai()    
