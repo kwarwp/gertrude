@@ -12,7 +12,7 @@ def backdropcena2():
   	personagem.vai = txtpersonagem.vai
   	cenaponto.vai()
   	planocemiterio = Plano (img = linkcemiterio)
-  	planocemiterio.vai()
+  	Plano.vai()
 backdropcena2()
 
   
