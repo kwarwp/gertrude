@@ -6,5 +6,5 @@ linkBackdropCena2 = "http://s2.glbimg.com/yX02WqYevO4ETQxDkX8ReUFLfKk=/s.glbimg.
 def mockBackdropCena2():
   mbcdrop = bcdrop(img = linkBackdropCena2)
   mbcdrop.vai()
-mbcdrop()
+mockbcdrop()
   
