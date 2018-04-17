@@ -13,6 +13,6 @@ class Cena2():
   def vai(self, *_):
     self.cena.vai()    
   def connectEsquerda(self, cena):
-    self.cenaEsquerda = cena
+    self.cenaEsquerda.vai = cena.vai
   def connectDireita(self, cena):
-    self.cenaDireita = cena
+    self.cenaDireita.vai = cena.vai
