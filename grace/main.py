@@ -7,8 +7,8 @@ class Cena2():
     self.cena = Cena(img = linkIMG)
     self.cenaEsquerda = Cena()
     self.cenaDireita = Cena()
-    self.cena.direita = cenaDireita
-    self.cena.esquerda = cenaEsquerda
+    self.cena.direita = self.cenaDireita
+    self.cena.esquerda = self.cenaEsquerda
 
   def vai(self, *_):
     self.cena.vai()    
