@@ -1,19 +1,22 @@
 # gertrude.anastasia.main.py
 from _spy.vitollino.main import Cena
-from meredith.main import Cena2
 
 linkIMG = "https://openclipart.org/image/800px/svg_to_png/232279/MandelbrotFrame.png"
 
-def Cena1():
-  cena1 = Cena(img = linkIMG)
-  cena2MOCK = Cena()
-  cena1.direita = cena2MOCK
-  cena2MOCK.vai = Cena2.vai
-  
-  cena1.vai()
-  
+class Cena1():
+  def __init__(self):
+    from meredith.main import Cena2
+    self.cena1 = Cena(img = linkIMG)
+    cena2 = Cena2()
+    cena1.direita = cena2
+
+    cena1.vai()
+  def vai(self, *_):
+    self.cena1.vai()
+
 def Game():
-  Cena1()
+  cena1 = Cena1()
+  cena1.vai()
 
 if __name__ == "__main__":
 	Game()
