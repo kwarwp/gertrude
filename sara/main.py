@@ -10,7 +10,7 @@ def backdropcena2():
   	personagem = Elemento (img = linkpersonagem, tit="garotinho", style = dict(left= 150, top=60, width=60, height=200))
   	personagem.entra(cenaponto)
   	txtpersonagem = Texto(cenaponto, "e agora?")
-  	txtpersonagem.vai = personagem.vai
+  	personagem.vai = txtpersonagem.vai
   	cenaponto.vai()  
 backdropcena2()
 
