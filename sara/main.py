@@ -11,8 +11,9 @@ def backdropcena2():
   	txtpersonagem = Texto(cenaponto, "e agora?")
   	personagem.vai = txtpersonagem.vai
   	cenaponto.vai()
-  	cenacemiterio = planocemiterio (img = linkcemiterio)
-  	cenacemiterio.vai()
+  	cenacemiterio = Cena (img = linkcemiterio)
+  	cenaponto.direita = cenacemiterio
+    
 backdropcena2()
 
   
