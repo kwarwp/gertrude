@@ -7,3 +7,5 @@ cena1 = Cena1()
 cena2 = Cena2()
 cena1.connectDireita(cena1)
 cena2.connectEsquerda(cena2)
+
+cena2.vai()
