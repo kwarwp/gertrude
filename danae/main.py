@@ -5,7 +5,6 @@ linkIMG = "https://openclipart.org/image/800px/svg_to_png/232279/MandelbrotFrame
 class Cena1():
   def __init__(self):
     self.cena = Cena(img = linkIMG)
-    self.cena.esquerda = cenaEsquerda
 
   def vai(self, *_):
     self.cena.vai() 
