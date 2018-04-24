@@ -16,8 +16,8 @@ def backdropcena2():
   	cenaponto.direita = cenacemiterio
   	personagem_falecido = Elemento (img = personagem_morto, tit="morreu", style = dict(right= 100, top=200, width=125,bottom=20))
   	personagem_falecido.entra(cenacemiterio)
-  	txtgameover = Texto(cenacemiterio, "Se ferrou!")
-  	gameover.vai = txtgameover.vai
+  	gameover = Texto(cenacemiterio, "Se ferrou!")
+  	gameover.vai()
     
 
    
