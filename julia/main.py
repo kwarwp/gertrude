@@ -27,10 +27,7 @@ class Cena1:
   		self.__phone.entra(self.__cena1)
   		self.__window.entra(self.__cena1)
   		self.__hand.entra(self.__cena1)
-		self.__hand.vai = self.teste
+  		self.__hand.vai = self.teste
   		#self.__cena1.direita = Cena2.vai();
 	def vai(self): self.__cena1.vai();
-	def teste(self): print('Foi')
-
-c = Cena1();
-c.vai();
+	def teste(self): print('Foi');
