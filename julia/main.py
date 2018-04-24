@@ -14,7 +14,7 @@ IMG = {
 
 class Cena1:
 	def __init__(self):
-  		self.cena1 = Cena(img=IMG['home']);
+  		self.__cena1 = Cena(img=IMG['home']);
   		cena2 = Cena2();
   		self.__umbrella = Elemento(img=IMG['umbrella'], trt="Guarda Chuva", style=dict(top=100, left=190, bottom=20, height=150, width=70))
   		self.__casaco = Elemento(img=IMG['casaco'], trt="Casaco", style=dict(top=150, left=20, bottom=20, height=150, width=70))
@@ -22,14 +22,14 @@ class Cena1:
   		self.__window = Elemento(img=IMG['window'], trt="Janela", style=dict(top=-15, left=60, bottom=10, width=200))
   		self.__hand = Elemento(img=IMG['hand'], trt="MÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£os", style=dict(top=200, left=125, height=100, width=70))
   		#txt = Texto(mCena, "CoÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©"
-  		self.__umbrella.entra(self.cena1)
-  		self.__casaco.entra(self.cena1)
-  		self.__phone.entra(self.cena1)
-  		self.__window.entra(self.cena1)
-  		self.__hand.entra(self.cena1)
+  		self.__umbrella.entra(self.__cena1)
+  		self.__casaco.entra(self.__cena1)
+  		self.__phone.entra(self.__cena1)
+  		self.__window.entra(self.__cena1)
+  		self.__hand.entra(self.__cena1)
   		self.__hand.vai = self.teste
-  		self.cena1.direita = cena2;
-	def vai(self): self.cena1.vai();
+  		self.__cena1.direita = cena2;
+	def vai(self): self.__cena1.vai();
 	def teste(self): print('Foi');
     
 c = Cena1();
