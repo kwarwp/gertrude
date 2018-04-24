@@ -18,8 +18,8 @@ class Cena1:
   		self.__casaco = Elemento(img=IMG['casaco'], trt="Casaco", style=dict(top=150, left=20, bottom=20, height=150, width=70))
   		self.__phone = Elemento(img=IMG['cellphone'], trt="Telefone", style=dict(top=180, left=180, bottom=20, width=30))
   		self.__window = Elemento(img=IMG['window'], trt="Janela", style=dict(top=-15, left=60, bottom=10, width=200))
-  		self.__hand = Elemento(img=IMG['hand'], trt="MÃ£os", style=dict(top=200, left=125, height=100, width=70))
-  		#txt = Texto(mCena, "CoÃ©");
+  		self.__hand = Elemento(img=IMG['hand'], trt="MÃÂ£os", style=dict(top=200, left=125, height=100, width=70))
+  		#txt = Texto(mCena, "CoÃÂ©");
   		self.__umbrella.entra(self.__cena)
   		self.__casaco.entra(self.__cena)
   		self.__phone.entra(self.__cena)
