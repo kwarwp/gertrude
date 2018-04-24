@@ -1,5 +1,6 @@
 # gertrude.sara.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto 
+#from julia.main import Cena1
 #Cena2
 linkbackdropcena2 = "http://s2.glbimg.com/yX02WqYevO4ETQxDkX8ReUFLfKk=/s.glbimg.com/jo/g1/f/original/2014/12/22/onibus-nathalia.jpg"
 linkpersonagem = "https://vignette.wikia.nocookie.net/cartoonnetwork/images/4/48/Ad%C3%A3o_Le%C3%A3o_%281%29.png/revision/latest?cb=20150125151129&path-prefix=pt-br"
@@ -24,9 +25,8 @@ backdropcena2()
 '''
 class Cena2():
 	def __init__(self):
-		from julia.main import Cena1
 		self.cena = Cena(img = linkbackdropcena2)
-		cena1 = Cena1()
+		#cena1 = Cena1()
   		personagem = Elemento (img = linkpersonagem, tit="garotinho", style = dict(left= 150, top=100, width=60, height=200))
   		personagem.entra(self.cena)
   		txtpersonagem = Texto(self.cena, "e agora?")
@@ -37,7 +37,7 @@ class Cena2():
   		personagem_falecido.entra(cenacemiterio)
   		gameover = Texto(cenacemiterio, "Se ferrou!")
   		gameover.vai()
-  		self.cena.esquerda = cena1
+  		#self.cena.esquerda = cena1
 	def vai(self, *_):
 		self.cena.vai()
     
