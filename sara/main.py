@@ -41,9 +41,6 @@ class  Cena2():
   		self.cena.esquerda = cena1
 	def vai(self, *_):
 		self.cena.vai()
-
-c = Cena2()
-c.vai()
     
     
     
