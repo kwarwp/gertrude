@@ -11,21 +11,22 @@ IMG = {
        'window' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/oie_transparent.png?disp=inline'
        }
 
-def createCena1():
-  cena1 = Cena(img=IMG['home']);
-  umbrella = Elemento(img=IMG['umbrella'], trt="Guarda Chuva", style=dict(top=100, left=190, bottom=20, height=150, width=70))
-  casaco = Elemento(img=IMG['casaco'], trt="Casaco", style=dict(top=150, left=20, bottom=20, height=150, width=70))
-  phone = Elemento(img=IMG['cellphone'], trt="Telefone", style=dict(top=180, left=180, bottom=20, width=30))
-  window = Elemento(img=IMG['window'], trt="Janela", style=dict(top=-15, left=60, bottom=10, width=200))
-  hand = Elemento(img=IMG['hand'], trt="Mãos", style=dict(top=200, left=125, height=100, width=70))
-  
-  #txt = Texto(mCena, "Coé");
-  umbrella.entra(cena1)
-  casaco.entra(cena1)
-  phone.entra(cena1)
-  window.entra(cena1)
-  hand.entra(cena1)
-  #hand.direita = #cena2
-  cena1.vai()
-  
-createCena1()
+class Cena1:
+	def __init__(self):
+  		self.__cena = Cena(img=IMG['home']);
+  		self.__umbrella = Elemento(img=IMG['umbrella'], trt="Guarda Chuva", style=dict(top=100, left=190, bottom=20, height=150, width=70))
+  		self.__casaco = Elemento(img=IMG['casaco'], trt="Casaco", style=dict(top=150, left=20, bottom=20, height=150, width=70))
+  		self.__phone = Elemento(img=IMG['cellphone'], trt="Telefone", style=dict(top=180, left=180, bottom=20, width=30))
+  		self.__window = Elemento(img=IMG['window'], trt="Janela", style=dict(top=-15, left=60, bottom=10, width=200))
+  		self.__hand = Elemento(img=IMG['hand'], trt="MÃ£os", style=dict(top=200, left=125, height=100, width=70))
+  		#txt = Texto(mCena, "CoÃ©");
+  		self.__umbrella.entra(self.__cena)
+  		self.__casaco.entra(self.__cena)
+  		self.__phone.entra(self.__cena)
+  		self.__window.entra(self.__cena)
+  		self.__hand.entra(self.__cena)
+  		#hand.direita = #cena2
+	def run(self): self.__cena.vai();
+
+c = Cena1();
+c.run();
