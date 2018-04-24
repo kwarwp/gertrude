@@ -22,7 +22,7 @@ def backdropcena2():
     
 backdropcena2()
 '''
-class  Cena2():
+class Cena2():
 	def __init__(self):
 		from julia.main import Cena1
 		self.cena = Cena(img = linkbackdropcena2)
@@ -31,7 +31,6 @@ class  Cena2():
   		personagem.entra(self.cena)
   		txtpersonagem = Texto(self.cena, "e agora?")
   		personagem.vai = txtpersonagem.vai
-  		self.cena.vai()
   		cenacemiterio = Cena (img = linkcemiterio)
   		self.cena.direita = cenacemiterio
   		personagem_falecido = Elemento (img = personagem_morto, tit="morreu", style = dict(right= 100, top=200, width=125,bottom=20))
