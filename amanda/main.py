@@ -11,7 +11,7 @@ def backdropcena2():
   	cenaponto = Cena (img = linkbackdropcena2)  
   	personagem = Elemento (img = linkpersonagem)
   	personagem.entra(cenaponto)
-  	txtpersonagem = Texto(cenaponto, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas.Para prosseguir clique no universo")
+  	txtpersonagem = Texto(cenaponto, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas, sobre a breve história da humanidade.Para prosseguir clique no universo")
   	personagem.vai = txtpersonagem.vai
   	cenaponto.vai()
   	cenacemiterio = Cena (img = linkcemiterio)
@@ -29,7 +29,7 @@ class Cena2():
 		#cena1 = Cena1()
   		personagem = Elemento (img = linkpersonagem)
   		personagem.entra(self.cena)
-  		txtpersonagem = Texto(self.cena, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas.Para prosseguir clique no universo")
+  		txtpersonagem = Texto(self.cena, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas, sobre a breve história da humanidade.Para prosseguir clique no universo")
   		personagem.vai = txtpersonagem.vai
   		cenacemiterio = Cena (img = linkcemiterio)
   		self.cena.direita = cenacemiterio
