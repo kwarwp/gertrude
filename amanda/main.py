@@ -41,4 +41,3 @@ class Cena2():
 	def vai(self, *_):
 		self.cena.vai()
 
-Cena2().vai()
