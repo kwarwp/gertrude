@@ -9,7 +9,7 @@ personagem_morto = "https://activufrj.nce.ufrj.br/file/GamesInteligentesII/image
 '''
 def backdropcena2():
   	cenaponto = Cena (img = linkbackdropcena2)  
-  	personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dict(left= 100, top=100, width=60, height=200))
+  	personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dict)
   	personagem.entra(cenaponto)
   	txtpersonagem = Texto(cenaponto, "e agora?")
   	personagem.vai = txtpersonagem.vai
@@ -27,7 +27,7 @@ class Cena2():
 	def __init__(self):
 		self.cena = Cena(img = linkbackdropcena2)
 		#cena1 = Cena1()
-  		personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dict(left= 100, top=100, width=60, height=200))
+  		personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dict)
   		personagem.entra(self.cena)
   		txtpersonagem = Texto(self.cena, "e agora?")
   		personagem.vai = txtpersonagem.vai
