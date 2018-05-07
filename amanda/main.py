@@ -8,7 +8,7 @@ personagem_morto = "https://activufrj.nce.ufrj.br/file/GamesInteligentesII/image
 '''
 def backdropcena():
   	cenaponto = Cena (img = linkbackdropcena)  
-  	personagem = Elemento (img = linkpersonagem, tit="marilyn monroe, style = dic)
+  	personagem = Elemento (img = linkpersonagem, tit="marilyn monroe, style = dic(left= 0, top=0, width=0, height=0))
   	personagem.entra(cenaponto)
   	txtpersonagem = Texto(cenaponto, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas, sobre a breve história da humanidade.Para prosseguir clique no universo")
   	personagem.vai = txtpersonagem.vai
@@ -26,7 +26,7 @@ class Cena2():
 	def __init__(self):
 		self.cena = Cena(img = linkbackdropcena)
 		#cena1 = Cena1()
-  		personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dic)
+  		personagem = Elemento (img = linkpersonagem, tit="marilyn monroe", style = dic(left= 0, top=0, width=0, height=0))
   		personagem.entra(self.cena)
   		txtpersonagem = Texto(self.cena, "Olá, eu sou a ideia do bem e do mal.Esse é um jogo de escolhas, sobre a breve história da humanidade.Para prosseguir clique no universo")
   		personagem.vai = txtpersonagem.vai
