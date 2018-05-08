@@ -37,7 +37,7 @@ class Cena1:
   		self.__oculos.entra(self.__cena1);
   		self.__cena1.direita = Cena2(True);
   		self.__cena1.esquerda = Cena2(False);
-		texto = Texto(self.__cena1,'Voce');
+		texto = Texto(self.__cena1,'Voce deve escolher entre os objetos da direita e os da esquerda');
 		texto.vai()
         
 	def vai(self): self.__cena1.vai();
