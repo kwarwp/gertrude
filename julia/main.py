@@ -18,7 +18,7 @@ IMG = {
 
 class Cena1:
 	def __init__(self):
-  		self.__cena1 = Cena(img=IMG['home'], esquerda=Cena2(False).vai);
+  		self.__cena1 = Cena(img=IMG['home'], esquerda=Cena2(False));
   		umbrella = Elemento(img=IMG['umbrella'], cena=self.__cena1, vai=Cena2(True), trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
   		casaco = Elemento(img=IMG['casaco'], cena=self.__cena1, vai=Cena2(True), trt="Casaco", style=dict(top=150, left=220, bottom=20, height=150, width=70))
   		phone = Elemento(img=IMG['cellphone'], cena=self.__cena1, vai=Cena2(False), trt="Telefone", style=dict(top=180, left=180, bottom=20, width=30))
@@ -27,7 +27,6 @@ class Cena1:
   		personagem = Elemento(img=IMG['personagem'], cena=self.__cena1, trt="personagem", style=dict(top=100,left=70,bottom=0, width=120))
   		bola = Elemento(img=IMG['bola'], cena=self.__cena1, trt="bola", vai=Cena2(False), style=dict(top=220, left=0, bottom=10, width=70))
   		oculos = Elemento(img=IMG['oculos'], cena=self.__cena1, vai=self.__cena1.vai_esquerda(), trt="Oculos", style=dict(top=160, left=20,bottom=20, width=50))
-  		self.__cena1.esquerda = Cena2(False);
 		texto = Texto(self.__cena1,'Voce deve escolher entre os objetos da direita e os da esquerda');
 		texto.vai()
         
