@@ -24,8 +24,9 @@ def backdropcena2():
 backdropcena2()
 '''
 class Cena2():
-	def __init__(self):
-		self.cena = Cena(img = linkbackdropcena2)
+	def __init__(self,escolha):
+		self.cena = Cena(img = linkbackdropcena2)  
+		self.escolha= escolha
 		#cena1 = Cena1()
   		personagem = Elemento (img = linkpersonagem, tit="garotinho", style = dict(left= 150, top=100, width=60, height=200))
   		personagem.entra(self.cena)
@@ -41,5 +42,5 @@ class Cena2():
 	def vai(self, *_):
 		self.cena.vai()
 
-Cena2().vai()
+#Cena2().vai()
     
