@@ -41,6 +41,3 @@ class Cena1:
 		texto.vai()
         
 	def vai(self): self.__cena1.vai();
-    
-c = Cena1();
-c.vai();
