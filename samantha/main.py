@@ -34,7 +34,7 @@ class Cena2():
   		self.cena.meio = cenaponto
   		personagem_falecido = Elemento (img = gatocosmico, tit="Socorro!", style = dict(right= 100, top=200, width=75,bottom=50))
   		#personagem_falecido.entra(cenaponto)
-  		gameover = Texto(cenaponto, "O Hubble Ultra Deep Field é uma imagem de uma pequena região do espaço,na constelação de Fornax, composta por dados do Telescópio Espacial Hubble no período de 3 de setembro de 2003 a 16 de janeiro de 2004. É a imagem mais profunda do universo tirada em luz visível, ilustrando o universo tal como ele era há 13 bilhões de anos atrás.")
+  		gameover = Texto(cenaponto, "O Hubble Ultra Deep Field Ã© uma imagem de uma pequena regiÃ£o do espaÃ§o,na constelaÃ§Ã£o de Fornax, composta por dados do TelescÃ³pio Espacial Hubble no perÃ­odo de 3 de setembro de 2003 a 16 de janeiro de 2004. Ã a imagem mais profunda do universo tirada em luz visÃ­vel, ilustrando o universo tal como ele era hÃ¡ 13 bilhÃµes de anos atrÃ¡s.")
   		gameover.vai()
   		#self.cena.esquerda = cena1
 	def vai(self, *_):
