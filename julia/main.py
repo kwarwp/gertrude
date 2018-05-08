@@ -1,6 +1,6 @@
 # gertrude.julia.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto
-from sara.main import *
+from sara.main import Cena2
 
 #Cena 1
 IMG = {
