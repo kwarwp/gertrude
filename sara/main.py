@@ -24,8 +24,8 @@ class Cena2():
 		#Logica
 		if escolha: pass#self.cena.direita = #sucesso;
 		else: self.cena.direita = cenacemiterio;
-  		self.cena.esquerda = Cena1()
+  		#self.cena.esquerda = Cena1()
         
 	def vai(self, *_):
 		self.cena.vai()
-    
+ 
