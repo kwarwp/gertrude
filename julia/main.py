@@ -28,6 +28,7 @@ class Cena1:
   		self.__personagem = Elemento(img=IMG['personagem'], trt="personagem", style=dict(top=100,left=70,bottom=0, width=120))
   		self.__bola = Elemento(img=IMG['bola'], trt="bola", style=dict(top=220, left=0, bottom=10, width=70))
         #txt = Texto(mCena, "CoÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©"
+  		self.__oculos = Elemento(img=IMG['oculos'], trt="Oculos", style=dict(top=160, left=20,bottom=20, width=50))
   		self.__umbrella.entra(self.__cena1)
   		self.__casaco.entra(self.__cena1)
   		self.__phone.entra(self.__cena1)
@@ -35,6 +36,7 @@ class Cena1:
   		self.__personagem.entra(self.__cena1)
   		self.__lampada.entra(self.__cena1)
   		self.__bola.entra(self.__cena1)
+  		self.__oculos.entra(self.__cena1)
   		self.__personagem.vai = self.teste
   		self.__cena1.direita = cena2;
 	def vai(self): self.__cena1.vai();
