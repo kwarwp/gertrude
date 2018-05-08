@@ -1,5 +1,5 @@
 # gertrude.julia.main.py
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import *
 from sara.main import Cena2
 
 #Cena 1
@@ -31,3 +31,8 @@ class Cena1:
 		texto.vai()
         
 	def vai(self): self.__cena1.vai();
+'''
+game = Jogo();
+game.q = Sala(nome = 'Cena1', o=Cena2);
+game.c.vai('Cena1')
+'''
