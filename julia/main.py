@@ -18,7 +18,7 @@ IMG = {
 
 class Cena1:
 	def __init__(self):
-  		self.__cena1 = Cena(img=IMG['home'], esquerda=Cena2(False));
+  		self.__cena1 = Cena(img=IMG['home'], esquerda=Cena2(False), direita=Cena2(True));
   		umbrella = Elemento(img=IMG['umbrella'], cena=self.__cena1, vai=Cena2(True), trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
   		casaco = Elemento(img=IMG['casaco'], cena=self.__cena1, vai=Cena2(True), trt="Casaco", style=dict(top=150, left=220, bottom=20, height=150, width=70))
   		phone = Elemento(img=IMG['cellphone'], cena=self.__cena1, vai=Cena2(False), trt="Telefone", style=dict(top=180, left=180, bottom=20, width=30))
