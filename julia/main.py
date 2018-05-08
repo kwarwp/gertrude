@@ -33,9 +33,9 @@ class Cena1:
   		window.entra(self.__cena1);
   		personagem.entra(self.__cena1);
   		lampada.entra(self.__cena1);
-  		bola.entra(self.__cena1);
+  		#bola.entra(self.__cena1);
   		oculos.entra(self.__cena1);
-  		bola.vai(Cena2(True));
+  		bola.entra(Cena2(True));
   		self.__cena1.esquerda = Cena2(False);
 		texto = Texto(self.__cena1,'Voce deve escolher entre os objetos da direita e os da esquerda');
 		texto.vai()
