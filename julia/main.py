@@ -36,8 +36,8 @@ class Cena1:
   		self.__lampada.entra(self.__cena1)
   		self.__bola.entra(self.__cena1)
   		self.__oculos.entra(self.__cena1)
-  		texto = Texto(self.__cena1,'Voce')
-  		texto.vai()
+  		self.__texto = Texto(self.__cena1,'Voce')
+  		self.__texto.vai()
   		#self.__personagem.vai() = self.teste
         
   		self.__cena1.direita = Cena2(True);
