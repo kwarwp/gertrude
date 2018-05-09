@@ -11,7 +11,7 @@ OCEANO = "https://freeclipartspot.com//storage/upload/ocean-clip-art/ocean-clip-
 ALGA = "https://i.pinimg.com/originals/70/68/5f/70685fa634c3bb82a8eb5771a0a869ed.png"
 CONCHA = "http://www.mat.uc.pt/~picado/conchas/imagens/p10.png"
 AQUARIO = "https://www.tenstickers.pt/autocolantes-decorativos/img/preview/autocolante-decorativo-infantil-peixe-aquario-3634.png"
-TRANSPARENTE = "https://png.pngtree.com/element_origin_min_pic/16/07/08/16577f6b0279750.jpg"
+TRANSPARENTE = "http://1.bp.blogspot.com/-eK24sreQNsg/Uvy1AT5iVSI/AAAAAAAAAGo/TRHh_nkqhVY/s1600/fundo-blog.png"
 FLORESTA = "https://st.depositphotos.com/1718692/2958/i/950/depositphotos_29580473-stock-photo-stones-and-tree-roots-in.jpg"
 OCULOS = "https://www.dvosky.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/d/v/dvsk1003-preto-prata.png"
 class Estados:
