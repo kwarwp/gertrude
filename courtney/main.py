@@ -11,12 +11,18 @@ OCEANO = "https://freeclipartspot.com//storage/upload/ocean-clip-art/ocean-clip-
 ALGA = "https://i.pinimg.com/originals/70/68/5f/70685fa634c3bb82a8eb5771a0a869ed.png"
 CONCHA = "http://www.mat.uc.pt/~picado/conchas/imagens/p10.png"
 AQUARIO = "https://www.tenstickers.pt/autocolantes-decorativos/img/preview/autocolante-decorativo-infantil-peixe-aquario-3634.png"
-FLORESTA = "http://meioambiente.culturamix.com/blog/wp-content/gallery/futuro-das-florestas-do-mundo-1/Futuro-das-Florestas-do-Mundo-3.jpg"
+TRANSPARENTE = "https://png.pngtree.com/element_origin_min_pic/16/07/08/16577f6b0279750.jpg"
+FLORESTA = "https://st.depositphotos.com/1718692/2958/i/950/depositphotos_29580473-stock-photo-stones-and-tree-roots-in.jpg"
+
 class Estados:
     def __init__(self):
         floresta = Cena(FLORESTA)
         self.fantasma = Cena()
         floresta.vai()
+        pedra = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
+            left=100, top=160, width=60, height="60px"))
+        galhos = Elemento(img=TRANSPARENTE,tit="galhos" style=dict(
+            left=100, top=160, width=60, height="60px"))  
         alga = Elemento(img=ALGA,tit="alga",style=dict(
             left=100, top=160, width=60, height="60px"))
         alga.entra(floresta)
