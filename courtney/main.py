@@ -11,21 +11,21 @@ OCEANO = "https://freeclipartspot.com//storage/upload/ocean-clip-art/ocean-clip-
 ALGA = "https://i.pinimg.com/originals/70/68/5f/70685fa634c3bb82a8eb5771a0a869ed.png"
 CONCHA = "http://www.mat.uc.pt/~picado/conchas/imagens/p10.png"
 AQUARIO = "https://www.tenstickers.pt/autocolantes-decorativos/img/preview/autocolante-decorativo-infantil-peixe-aquario-3634.png"
-
+FLORESTA = "http://meioambiente.culturamix.com/blog/wp-content/gallery/futuro-das-florestas-do-mundo-1/Futuro-das-Florestas-do-Mundo-3.jpg"
 class Estados:
     def __init__(self):
-        oceano = Cena(OCEANO)
+        floresta = Cena(FLORESTA)
         self.fantasma = Cena()
-        oceano.vai()
+        floresta.vai()
         alga = Elemento(img=ALGA,tit="alga",style=dict(
             left=100, top=160, width=60, height="60px"))
-        alga.entra(oceano)
+        alga.entra(floresta)
         concha = Elemento(img=CONCHA,tit="concha",style=dict(
             left=200, top=160, width=60, height="60px"))
-        concha.entra(oceano)
+        concha.entra(floresta)
         self.peixe = aqua = Elemento(img=AQUARIO,tit="peixe",style=dict(
             left=300, top=160, width=60, height="60px"))
-        aqua.entra(oceano)
+        aqua.entra(floresta)
         aqua.vai = self.fogo_peixe
     def fogo_peixe(self, *_):
         input("Voce fez fogo usando um peixe! Como vocÃª fez?")
