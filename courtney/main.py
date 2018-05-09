@@ -19,17 +19,22 @@ class Estados:
         floresta = Cena(FLORESTA)
         self.fantasma = Cena()
         floresta.vai()
-        galhos = Elemento(img=TRANSPARENTE,tit="galhos", style=dict(
+        self.galhos = gag = Elemento(img=TRANSPARENTE,tit="galhos", style=dict(
             left=28, top=130, width=60, height="60px"))
-        galhos.entra(floresta)
+        gag.entra(floresta)
+        gag.vai = self.fogo_galhos
         self.pedra = aqua = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
             left=500, top=300, width=60, height="60px")) 
         aqua.entra(floresta)
-        
         aqua.vai = self.fogo_pedra
+        
     def fogo_pedra(self, *_):
         input("Voce fez fogo usando pedras! Como vocÃª fez?")
         self.pedra.entra(self.fantasma)
+    def fogo_galhos(self, *_):
+        input("voce fez fogo usando galhos! como vc fez?")
+        self.galhos.entra(self.fantasma)
+        
         
 
         
