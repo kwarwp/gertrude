@@ -22,22 +22,19 @@ class Estados:
         galhos = Elemento(img=TRANSPARENTE,tit="galhos", style=dict(
             left=28, top=130, width=60, height="60px"))
         galhos.entra(floresta)
-        pedra = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
+        self.pedra = aqua = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
             left=500, top=300, width=60, height="60px")) 
-        pedra.entra(floresta)
+        aqua.entra(floresta)
         alga = Elemento(img=ALGA,tit="alga",style=dict(
             left=100, top=160, width=60, height="60px"))
         alga.entra(floresta)
         concha = Elemento(img=CONCHA,tit="concha",style=dict(
             left=200, top=160, width=60, height="60px"))
         concha.entra(floresta)
-        self.peixe = aqua = Elemento(img=AQUARIO,tit="peixe",style=dict(
-            left=300, top=160, width=60, height="60px"))
-        aqua.entra(floresta)
-        aqua.vai = self.fogo_peixe
-    def fogo_peixe(self, *_):
-        input("Voce fez fogo usando um peixe! Como vocÃª fez?")
-        self.peixe.entra(self.fantasma)
+        aqua.vai = self.fogo_pedra
+    def fogo_pedra(self, *_):
+        input("Voce fez fogo usando pedras! Como vocÃª fez?")
+        self.pedra.entra(self.fantasma)
         
 
         
