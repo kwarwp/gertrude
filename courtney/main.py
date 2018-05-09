@@ -19,9 +19,9 @@ class Estados:
         floresta = Cena(FLORESTA)
         self.fantasma = Cena()
         floresta.vai()
-        pedra = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
-            left=400, top=160, width=60, height="60px"))
-        pedra.entra(floresta)
+        galhos = Elemento(img=TRANSPARENTE,tit="galhos", style=dict(
+            left=28, top=130, width=60, height="60px"))
+        galhos.entra(floresta)
         pedra = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
             left=500, top=300, width=60, height="60px")) 
         pedra.entra(floresta)
