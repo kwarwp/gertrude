@@ -25,12 +25,7 @@ class Estados:
         self.pedra = aqua = Elemento(img=TRANSPARENTE,tit="pedras", style=dict(
             left=500, top=300, width=60, height="60px")) 
         aqua.entra(floresta)
-        alga = Elemento(img=ALGA,tit="alga",style=dict(
-            left=100, top=160, width=60, height="60px"))
-        alga.entra(floresta)
-        concha = Elemento(img=CONCHA,tit="concha",style=dict(
-            left=200, top=160, width=60, height="60px"))
-        concha.entra(floresta)
+        
         aqua.vai = self.fogo_pedra
     def fogo_pedra(self, *_):
         input("Voce fez fogo usando pedras! Como vocÃª fez?")
