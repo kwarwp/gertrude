@@ -13,7 +13,7 @@ CONCHA = "http://www.mat.uc.pt/~picado/conchas/imagens/p10.png"
 AQUARIO = "https://www.tenstickers.pt/autocolantes-decorativos/img/preview/autocolante-decorativo-infantil-peixe-aquario-3634.png"
 TRANSPARENTE = "https://png.pngtree.com/element_origin_min_pic/16/07/08/16577f6b0279750.jpg"
 FLORESTA = "https://st.depositphotos.com/1718692/2958/i/950/depositphotos_29580473-stock-photo-stones-and-tree-roots-in.jpg"
-
+OCULOS = "https://www.dvosky.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/d/v/dvsk1003-preto-prata.png"
 class Estados:
     def __init__(self):
         floresta = Cena(FLORESTA)
@@ -27,6 +27,10 @@ class Estados:
             left=500, top=300, width=60, height="60px")) 
         aqua.entra(floresta)
         aqua.vai = self.fogo_pedra
+        self.oculos = ocu = Elemento(img=OCULOS, tit="OCULOS", style=dict(
+            left=28, top=130, width=60, height="60px"))
+        inv.bota(self.oculos)
+        ocu.vai = self.fogo_oculos
         
     def fogo_pedra(self, *_):
         input("Voce fez fogo usando pedras! Como vocÃª fez?")
@@ -34,6 +38,9 @@ class Estados:
     def fogo_galhos(self, *_):
         input("voce fez fogo usando galhos! como vc fez?")
         self.galhos.entra(self.fantasma)
+    def fogo_oculos(self, *_):
+        input("voce fez fogo usando oculos! como vc fez?")
+        self.oculos.entra(self.fantasma)
         
         
 
