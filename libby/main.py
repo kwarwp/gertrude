@@ -1,5 +1,6 @@
 # gertrude.libby.main.py
+from _spy.vitollino.main import *
 from julia.main import Cena1
 
-c = Cena1();
-c.vai();
+JOGO.c = Cena1();
+JOGO.c.vai();
