@@ -33,7 +33,7 @@ class Estados:
         ocu.vai = self.fogo_oculos
         
     def fogo_pedra(self, *_):
-        input("Voce fez fogo usando pedras! Como vocÃÂª fez?")
+        input("Voce fez fogo usando pedras! Como vocÃÂÃÂª fez?")
         self.pedra.entra(self.fantasma)
     def fogo_galhos(self, *_):
         input("voce fez fogo usando galhos! como vc fez?")
