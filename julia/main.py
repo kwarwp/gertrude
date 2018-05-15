@@ -16,8 +16,8 @@ IMG = {
        
        }
 
-class Cena1():
-	def __init__():
+class Cena1:
+	def __init__(self):
   		self.__cena1 = Cena(img = IMG['home']);
   		umbrella = Elemento(img=IMG['umbrella'], cena=self.__cena1, vai=Cena2(True).vai, trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
   		casaco = Elemento(img=IMG['casaco'], cena=self.__cena1, vai=Cena2(True).vai, trt="Casaco", style=dict(top=150, left=220, bottom=20, height=150, width=70))
@@ -32,5 +32,6 @@ class Cena1():
         
 	def vai(self): self.__cena1.vai();
     
-    
+c =Cena1();
+c.vai()
     
