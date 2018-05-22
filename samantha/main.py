@@ -15,8 +15,8 @@ def backdropcena():
   	txtpersonagem = Texto(cenaponto, "Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
   	personagem.vai = txtpersonagem.vai
   	cenaponto.vai()
-  	cenacemiterio = Cena (img = linkcemiterio)
-  	cenaponto.direita = cenaponto
+  	cenadeepspace = Cena (img = linkdeepspace)
+  	cenadeepspace.direita = cenadeepspace
   	personagem_falecido = Elemento (img = personagem_morto, tit="morreu", style = dict(right= 100, top=200, width=125,bottom=20))
   	personagem_falecido.entra(cenacemiterio)
   	gameover = Texto(cenacemiterio, "Se ferrou!")
