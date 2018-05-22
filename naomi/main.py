@@ -16,8 +16,8 @@ class Cena1:
 		self.__cena1 = Cena(img = IMG['background']);
 		mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
 		sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
-		if personagem == 'Mario': mario.vai = Cena(img = IMG['backgroundMario'], esquerda = self.__cena1.vai).vai;
-		elif personagem == 'Sonic': sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1.vai).vai;
+		if personagem == 'Mario': mario.vai = Cena(img = IMG['backgroundMario'], esquerda = Cena1('Sonic')).vai;
+		elif personagem == 'Sonic': sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1('Mario')).vai;
         
 	def vai(self): self.__cena1.vai();
 c = Cena1('Mario');
