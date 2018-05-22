@@ -17,9 +17,7 @@ def backdropcena():
   	cenaponto.vai()
   	cenadeepspace = Cena (img = linkdeepspace)
   	cenamarilyn.direita = cenadeepspace
-  	personagem_falecido = Elemento (img = personagem_morto, tit="morreu", style = dict(right= 100, top=200, width=125,bottom=20))
-  	personagem_falecido.entra(cenacemiterio)
-  	gameover = Texto(cenacemiterio, "Se ferrou!")
+  	gameover = Texto(cenacemiterio, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaço,na constelaçao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   	gameover.vai()
 '''    
 backdropcena2()
@@ -34,8 +32,6 @@ class Cena2():
   		marilyn.vai = txtmarilyn.vai
   		cenadeepspace = Cena (img = linkdeepspace)
   		self.cena.meio = cenadeepspace
-  		personagem_falecido = Elemento (img = gatocosmico, tit="Socorro!", style = dict(right= 100, top=200, width=75,bottom=50))
-  		#personagem_falecido.entra(cenaponto)
   		gameover = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaço,na constelaçao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   		gameover.vai()
   		#self.cena.esquerda = cena1
