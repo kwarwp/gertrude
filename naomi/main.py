@@ -27,8 +27,8 @@ class Cena1:
 				falaSonic.vai();
 				personagem = True;
 				
-		self.__mario = Elemento(img=IMG['mario'],vai=trade, cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
-		self.__sonic = Elemento(img=IMG['sonic'],vai=trade, cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
+		self.__mario = Elemento(img=IMG['mario'], vai=trade, cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
+		self.__sonic = Elemento(img=IMG['sonic'], vai=trade, cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
         
 	def vai(self): self.__cena1.vai();
 c = Cena1();
