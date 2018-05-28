@@ -12,26 +12,17 @@ IMG = {
        
 class Cena1:
 
-	def __init__(self):
-		p = True;    
+	def __init__(self, p):            
 		self.__cena1 = Cena(img = IMG['background']);
-		#if personagem == 'Mario': mario.vai = Cena(img = IMG['backgroundMario'], esquerda = Cena1('Sonic')).vai;
-		#elif personagem == 'Sonic': sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1('Mario')).vai;
-		falaMario = Texto(self.__cena1,"It's-a me, Mario!");        
-		falaSonic = Texto(self.__cena1,'Entao vc prefere O Mario');        
-		def trade():       
-			if p == True:
-				falaMario = Texto(self.__cena1,"It's-a me, Mario!");
-				
-				p = False;                
-			else:
-				
-				
-				p = True;
-				
-		self.__mario = Elemento(img=IMG['mario'], vai=falaMario.vai, cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
-		self.__sonic = Elemento(img=IMG['sonic'], vai=falaSonic.vai, cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
+		mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
+		sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))                
+		#if p: mario.vai = Cena(img = IMG['backgroundMario'], esquerda = Cena1(False)).vai;
+		#else: sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1(True)).vai;
+		if p: 
+			falaGame = Texto(self.__cena1,"Escolha um dos personagens para continuar");        
+			falaGame.vai();        
         
 	def vai(self): self.__cena1.vai();
-c = Cena1();
+    
+c = Cena1(True);
 c.vai();
