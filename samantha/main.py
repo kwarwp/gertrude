@@ -19,13 +19,13 @@ linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 
 
 def backdropcena():
-  	cenaponto = Cena (img = linkbackdropcena)  
+  	cena1 = Cena (img = linkbackdropcena)  
   	marilyn = Elemento (img = linkmarilyn, tit="marilyn")
-  	personagem.entra(cenaponto)
-  	txtpersonagem = Texto(cenaponto, "Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
+  	personagem.entra(cena1)
+  	txtpersonagem = Texto(cena1, "Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
   	personagem.vai = txtpersonagem.vai
-  	cenaponto.vai()
-  	cenaponto = Cena (img = linkdeepspace)
+  	cena1.vai()
+  	cena1 = Cena (img = linkdeepspace)
   	cenamarilyn.direita = cenadeepspace
   	cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaço,na constelaçao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   	cenadois.vai()
