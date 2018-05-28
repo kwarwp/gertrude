@@ -1,3 +1,4 @@
+from _spy.vitollino.main import Cena, Elemento, Texto 
 
 linkbackdropcena = "https://universoracionalista.org/wp-content/uploads/2017/05/galaxias.jpg"
 linkmarilyn = "https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-22_at_11.54.54.jpeg?disp=inline"
@@ -16,20 +17,7 @@ linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2E
 linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 
 
-def backdropcena():
-  	cena1 = Cena (img = linkbackdropcena)  
-  	marilyn = Elemento (img = linkmarilyn, tit="marilyn")
-  	personagem.entra(cena1)
-  	txtpersonagem = Texto(cena1, "Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
-  	personagem.vai = txtpersonagem.vai
-  	cena1.vai()
-  	cena2 = Cena (img = linkdeepspace)
-  	cenamarilyn.direita = cenadeepspace
-  	cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaÃ§o,na constelaÃ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
-  	cenadois.vai()
-'''    
-backdropcena2()
-'''
+
 class Cena2():
 	def __init__(self):
 		self.cena = Cena(img = linkbackdropcena)
@@ -40,7 +28,7 @@ class Cena2():
   		marilyn.vai = txtmarilyn.vai
   		cenadeepspace = Cena (img = linkdeepspace)
   		self.cena.direita = cenadeepspace
-  		cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaÃÂ§o,na constelaÃÂ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
+  		cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaÃÂÃÂ§o,na constelaÃÂÃÂ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   		cenadois.vai()
   		#self.cena.esquerda = cena1
 	def vai(self, *_):
