@@ -14,12 +14,12 @@ class Cena1:
 
 	def __init__(self, i=False):
 		self.__cena1 = Cena(img = IMG['background']);
-		mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
-		sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))                
+		self.__mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
+		self.__sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))                
 		intro = Texto(self.__cena1,"Escolha um dos personagens para continuar");
 		if i: intro.vai();        
-		#mario.vai = Cena(img = IMG['backgroundMario'], esquerda=Cena1()).vai;
-		#sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda=Cena1()).vai;
+		self.__mario.vai = Cena(img = IMG['backgroundMario'], esquerda=self).vai;
+		self.__sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda=self).vai;
         
 	def vai(self): self.__cena1.vai();
     
