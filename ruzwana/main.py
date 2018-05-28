@@ -18,7 +18,7 @@ linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 
 
 
-class Cena2():
+class Cena1():
 	def __init__(self):
 		self.cena = Cena(img = linkbackdropcena)
 		#cena1 = Cena1()
@@ -34,4 +34,4 @@ class Cena2():
 	def vai(self, *_):
 		self.cena.vai()
 
-Cena2().vai()
+Cena1().vai()
