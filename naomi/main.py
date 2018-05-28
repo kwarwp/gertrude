@@ -12,17 +12,16 @@ IMG = {
        
 class Cena1:
 
-	def __init__(self, p):            
+	def __init__(self, p='teste'):
 		self.__cena1 = Cena(img = IMG['background']);
 		mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
 		sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))                
-		#if p: mario.vai = Cena(img = IMG['backgroundMario'], esquerda = Cena1(False)).vai;
-		#else: sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1(True)).vai;
-		if p: 
-			falaGame = Texto(self.__cena1,"Escolha um dos personagens para continuar");        
-			falaGame.vai();        
+		intro = Texto(self.__cena1,"Escolha um dos personagens para continuar");
+		if p == 'teste': intro.vai();        
+		#mario.vai = Cena(img = IMG['backgroundMario'], esquerda=Cena1('')).vai;
+		#sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda=Cena1('')).vai;
         
 	def vai(self): self.__cena1.vai();
     
-c = Cena1(True);
+c = Cena1();
 c.vai();
