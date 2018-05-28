@@ -21,12 +21,12 @@ class Cena1:
 		#elif personagem == 'Sonic': sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1('Mario')).vai;
 		def trade():       
 			if p == True:
-				falaMario = Texto(self.__cena1,'Então vc prefere O Mario');
+				falaMario = Texto(self.__cena1,"It's-a me, Mario!");
 				falaMario.vai();
 				personagem = False;                
 				self.__sonic.vai = trade;                
 			else:
-				falaSonic = Texto(self.__cena1,'Então vc prefere O Mario');
+				falaSonic = Texto(self.__cena1,'Entao vc prefere O Mario');
 				falaSonic.vai();
 				personagem = True;
 				
