@@ -5,12 +5,8 @@ linkbackdropcena = "https://universoracionalista.org/wp-content/uploads/2017/05/
 linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
 linkportasparauniversos = "https://static.brusheezy.com/system/resources/premium_previews/000/041/258/non_2x/Eerie-Halloween-Wallpaper-PSD.jpg"
 gatocosmico = "http://i.imgur.com/RgaBeG7.png"
-linkmarilyn = "https://activufrj.nce.ufrj.br/file/pedropeclat/aaaaaaaaaaaa.png"
+linkmarilyn = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
 linkdeepspace = "https://www.google.com.br/search?q=deep+field&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjy2bbPu5nbAhXMhZAKHREpDnUQ_AUICigB&biw=1366&bih=662#imgrc=Ba3E_PaLJ3QRrM:"
-linkend = "https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
-linkbehelit = "https://vignette.wikia.nocookie.net/evil/images/3/3f/The_Behelit.jpg/revision/latest?cb=20151110185922"
-linkparthenon = "https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg"
-linkmerlin = "https://activufrj.nce.ufrj.br/file/pedropeclat/00merlin-the-sword-in-the-stone-packing.png"
 
 def backdropcena():
   	cenaponto = Cena (img = linkbackdropcena)  
