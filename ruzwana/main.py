@@ -24,6 +24,26 @@ def backdropcena():
   	personagem.vai = txtpersonagem.vai
   	cena1.vai()
   	cena2 = Cena (img = linkdeepspace)
-  	cenamarilyn.direita = cena2
+  	cenamarilyn.direita = cenadeepspace
   	cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaÃ§o,na constelaÃ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   	cenadois.vai()
+'''    
+backdropcena2()
+'''
+class Cena2():
+	def __init__(self):
+		self.cena = Cena(img = linkbackdropcena)
+		#cena1 = Cena1()
+  		marilyn = Elemento (img = linkmarilyn, tit="marilyn", style = dict(right= 100, top=145, width= 115,bottom=20))
+  		marilyn.entra(self.cena)
+  		txtmarilyn = Texto(self.cena, "Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
+  		marilyn.vai = txtmarilyn.vai
+  		cenadeepspace = Cena (img = linkdeepspace)
+  		self.cena.direita = cenadeepspace
+  		cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaÃÂ§o,na constelaÃÂ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
+  		cenadois.vai()
+  		#self.cena.esquerda = cena1
+	def vai(self, *_):
+		self.cena.vai()
+
+Cena2().vai()
