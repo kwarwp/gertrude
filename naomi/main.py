@@ -15,8 +15,6 @@ class Cena1:
 	def __init__(self):
 		p = True;    
 		self.__cena1 = Cena(img = IMG['background']);
-		self.__mario = Elemento(img=IMG['mario'], cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
-		self.__sonic = Elemento(img=IMG['sonic'], cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
 		#if personagem == 'Mario': mario.vai = Cena(img = IMG['backgroundMario'], esquerda = Cena1('Sonic')).vai;
 		#elif personagem == 'Sonic': sonic.vai = Cena(img = IMG['backgroundSonic'], esquerda = Cena1('Mario')).vai;
 		def trade():       
@@ -24,13 +22,13 @@ class Cena1:
 				falaMario = Texto(self.__cena1,"It's-a me, Mario!");
 				falaMario.vai();
 				personagem = False;                
-				self.__sonic.vai = trade;                
 			else:
 				falaSonic = Texto(self.__cena1,'Entao vc prefere O Mario');
 				falaSonic.vai();
 				personagem = True;
 				
-		self.__mario.vai = trade();
+		self.__mario = Elemento(img=IMG['mario'],vai=trade, cena=self.__cena1, trt="Mario", style=dict(top=100, left=20, bottom=20, height=150, width=70))
+		self.__sonic = Elemento(img=IMG['sonic'],vai=trade, cena=self.__cena1, trt="Sonic", style=dict(top=100, left=200, bottom=20, height=150, width=70))
         
 	def vai(self): self.__cena1.vai();
 c = Cena1();
