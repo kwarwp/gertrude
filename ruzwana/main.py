@@ -28,7 +28,7 @@ class Cena1():
   		marilyn.vai = txtmarilyn.vai
   		self.cenadeepspace = Cena (img = linkdeepspace)
   		self.cena.direita = cenadeepspace
-  		cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaaço,na constelaçao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
+  		cenadois = Texto(cenadeepspace, "O Hubble Ultra Deep Field uma imagem de uma pequena regiao do espaaÃ§o,na constelaÃ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
   		cenadois.vai()
   		#self.cena.esquerda = cena1
 	def vai(self, *_):
