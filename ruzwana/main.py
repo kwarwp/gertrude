@@ -33,7 +33,7 @@ def historia():
     txtmerlin = Texto(cena2,"O Hubble Ultra Deep Field eh uma imagem de uma pequena regiao do espaco, na constelaÃ§ao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004, a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
     merlin.vai = txtmerlin.vai
     
-    cena1.seta = cena2
+    cena1.direita = cena2
     cena2.esquerda = cena1
     
     cena1.vai()
