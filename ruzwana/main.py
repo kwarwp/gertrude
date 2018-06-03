@@ -14,7 +14,7 @@ linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=i
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
 linkoppenheimer ="https://activufrj.nce.ufrj.br/file/pedropeclat/Oppenheimer.png?disp=inline"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
-linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
+linkbojackesarahlynn=" https://activufrj.nce.ufrj.br/file/pedropeclat/21-bojack-11.png?disp=inline"
 linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
 
 def historia():
@@ -62,7 +62,7 @@ def historia():
     cena5.esquerda=cena4
     
     cena6 = Cena (img = linkporta3)
-    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 180, top=180, width= 115,bottom=20,))
     hipatia.entra(cena6)
     txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
     hipatia.entra = txthipatia.vai
@@ -79,6 +79,11 @@ def historia():
     
     cena6.direita=cena7
     cena7.esquerda=cena6
+    
+    cena8 = Cena (img =linkbojackesarahlynn)
+    
+    cena7.direita=cena8
+    cena8.esquerda=cena7
     
     
     cena1.vai()
