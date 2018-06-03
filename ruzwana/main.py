@@ -6,13 +6,13 @@ linkdeepspace = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIT
 linkmerlin = "https://activufrj.nce.ufrj.br/file/pedropeclat/00merlin-the-sword-in-the-stone-packing.png?disp=inline"
 linkportasparauniversos = "https://universoracionalista.org/wp-content/uploads/2017/05/galaxias.jpg"
 linkporta1 = "https://activufrj.nce.ufrj.br/file/pedropeclat/Dore.jpg?disp=inline"
-#linkloba =
+linkbehelit ="https://activufrj.nce.ufrj.br/file/pedropeclat/The_Red_Behelit.png?disp=inline"
 linkporta2 = "https://activufrj.nce.ufrj.br/file/pedropeclat/img.jpg?disp=inline"
 linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
 linkporta3 = " https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-28_at_17.14.57_1.jpeg?disp=inline"
 linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=inline"
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
-linkbehelit ="https://activufrj.nce.ufrj.br/file/pedropeclat/The_Red_Behelit.png?disp=inline"
+#linkoppenheimer =""
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
@@ -55,7 +55,7 @@ def historia():
     cena5 = Cena (img = linkporta2)
     madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(left= 100, top=90, width= 115,bottom=20,))
     madoka.entra(cena5)
-    txtmadoka = Texto (cena5, "Esse eh um quadro da Hilma af Klint, Group IX/SU")   
+    txtmadoka = Texto (cena5, "Esse eh parthenon")   
     madoka.vai = txtmadoka.vai
     
     cena4.direita=cena5
