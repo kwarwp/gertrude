@@ -1,11 +1,12 @@
 # gertrude.kellee.main.py
 from _spy.vitollino.main import Cena, Texto, Elemento
 
+linkBackdropcena = "https://universoracionalista.org/wp-content/uploads/2017/05/galaxias.jpg"
 linkCaverna = "http://tolongedecasa.com/wp-content/uploads/2017/07/Caverna-de-Postonja-21.jpg"
 linkGolem = "https://vignette.wikia.nocookie.net/soulcalibur/images/d/dc/Golem.jpg"
 
 def Defumado():
-    caverna = Cena(img = linkCaverna)
+    caverna = Cena(img = linkBackdropcena)
     Golem = Elemento(img = linkGolem, tit="Golem", style=dict(left= 120, top= 150, width= 100,height= 250))
     Golem.entra(caverna)
     txtGolem=Texto(caverna, "Sim meu mestre!")
@@ -17,7 +18,7 @@ def Defumado():
     floresta = Cena(img=linkFloresta)
     Golem2 = Elemento(img = linkGolem, style =dict(top = 150, left = 120, height = 250, width = 100))
     Golem2.entra(floresta)
-    txtGolem2 = Texto(floresta, "Irei atrás da caça para me alimentar, talvez na cidade!")
+    txtGolem2 = Texto(floresta, "Irei atrÃ¡s da caÃ§a para me alimentar, talvez na cidade!")
     Golem2.vai = txtGolem2.vai
     
     caverna.direita = floresta
@@ -28,7 +29,7 @@ def Defumado():
     berlim = Cena(img=linkBerlim)
     Golem3 = Elemento(img = linkGolem, style =dict(top = 150, left = 120, height = 250, width = 100))
     Golem3.entra(berlim)
-    txtGolem3 = Texto(berlim, "A cidade irá ficar diante dos meus pés!")
+    txtGolem3 = Texto(berlim, "A cidade irÃ¡ ficar diante dos meus pÃ©s!")
     Golem3.vai = txtGolem3.vai
     
     floresta.direita = berlim
@@ -40,7 +41,7 @@ def Defumado():
     Mistica = Cena(img = linkMistica)
     Mago = Elemento(img = linkMago, tit="Mago", style=dict(left= 120, top= 150, width= 100, height= 250))
     Mago.entra(Mistica)
-    txtMago=Texto(Mistica, "Onde andas minha criação?")
+    txtMago=Texto(Mistica, "Onde andas minha criaÃ§Ã£o?")
     Mago.vai = txtMago.vai
     
     berlim.direita = Mistica
@@ -51,7 +52,7 @@ def Defumado():
     berlim2 = Cena(img = linkBerlim)
     Amiguinho = Elemento(img = linkAmiguinho, style =dict(top = 150, left = 120, height = 250, width = 100))
     Amiguinho.entra(berlim2)
-    txtAmiguinho=Texto(berlim2, "Quem há de entrar em minha morada? Yo soy Dollynho!")
+    txtAmiguinho=Texto(berlim2, "Quem hÃ¡ de entrar em minha morada? Yo soy Dollynho!")
     Amiguinho.vai = txtAmiguinho.vai
     
     Mistica.direita = berlim2
@@ -59,7 +60,7 @@ def Defumado():
     
     berlim3 = Cena(img=linkBerlim)
     Golem4 = Elemento(img=linkGolem, style = dict( top = 150, left = 120, height = 250, width = 100))
-    txtGolem4 = Texto(berlim3, "Essa cidade é pequena demais pra nois dois, meu brodi!")
+    txtGolem4 = Texto(berlim3, "Essa cidade Ã© pequena demais pra nois dois, meu brodi!")
     Golem4.entra(berlim3)
     Golem4.vai = txtGolem4.vai
     
@@ -71,7 +72,7 @@ def Defumado():
     Amiguinho2 = Elemento(img = linkAmiguinho, style =dict(top = 150, left = 20, width = 100, height = 250))
     Golem5.entra(berlim4)
     Amiguinho2.entra(berlim4)
-    txtAmiguinho2=Texto(berlim4, "Veremos ver quem irá ficar com o território!")
+    txtAmiguinho2=Texto(berlim4, "Veremos ver quem irÃ¡ ficar com o territÃ³rio!")
     Amiguinho2.vai = txtAmiguinho2.vai
     
     berlim3.direita = berlim4
