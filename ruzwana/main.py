@@ -9,7 +9,7 @@ linkporta1 = "https://activufrj.nce.ufrj.br/file/pedropeclat/Dore.jpg?disp=inlin
 #linkloba =
 linkporta2 = "https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-28_at_17.14.57_1.jpeg?disp=inline"
 linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
-linkporta3 = " https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
+linkporta3 = " https://activufrj.nce.ufrj.br/file/pedropeclat/img.jpg?disp=inline"
 linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=inline"
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
 linkbehelit ="https://activufrj.nce.ufrj.br/file/pedropeclat/The_Red_Behelit.png?disp=inline"
@@ -51,10 +51,11 @@ def historia():
     cena3.direita = cena4
     cena4.esquerda = cena3
     
+    
     cena5 = Cena (img = linkporta2)
     madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(left= 100, top=90, width= 115,bottom=20,))
     madoka.entra(cena5)
-    txtmadoka = Texto (cena5, "Esse eh um quadro da Hilma af Klint, Group IX/SU")   
+    txtmadoka = Texto (cena5 "Esse eh um quadro da Hilma af Klint, Group IX/SU")   
     madoka.vai = txtmadoka.vai
     
     cena4.direita=cena5
