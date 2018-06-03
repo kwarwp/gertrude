@@ -23,7 +23,7 @@ def historia():
     marilyn.entra(cena1)
     #seta = Elemento(img = linkseta,tit="seta", style = dict(left= 200, top=200, width= 100,bottom=70,))
     #seta.entra(cena1)
-    txtmarilyn = Texto(cena1,"Ola, eu sou a ideia do bem e do mal.Esse eh um jogo de escolhas sobre a breve historia da humanidade.Para prosseguir, clique a direita no univers e para voltar clique a esquerda")
+    txtmarilyn = Texto(cena1,"Ola, eu sou a ideia do bem e do mal. Esse eh um jogo de escolhas sobre a breve historia da humanidade.Para prosseguir, clique a direita no univers e para voltar clique a esquerda.")
     marilyn.vai=txtmarilyn.vai
     cena1.vai()
      
