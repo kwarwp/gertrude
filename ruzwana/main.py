@@ -7,12 +7,12 @@ linkmerlin = "https://activufrj.nce.ufrj.br/file/pedropeclat/00merlin-the-sword-
 linkportasparauniversos = "https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-06-03_at_02.49.52_1.jpeg?disp=inline"
 linkporta1 = "https://activufrj.nce.ufrj.br/file/pedropeclat/Dore.jpg?disp=inline"
 #linkloba =
-#linkporta2 =
+linkporta2 ="https://activufrj.nce.ufrj.br/file/pedropeclat/img.jpg?disp=inline"
 linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
-#linkporta3 =
+linkporta3 ="https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-28_at_17.14.57_1.jpeg?disp=inline"
 linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=inline"
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
-linkbehelit ="https://vignette.wikia.nocookie.net/evil/images/3/3f/The_Behelit.jpg/revision/latest?cb=20151110185922"
+linkbehelit ="https://activufrj.nce.ufrj.br/file/pedropeclat/The_Red_Behelit.png?disp=in"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkseta = "http://jointeffortmarketing.com/wp-content/uploads/2014/09/black-arrow.png"
 
@@ -39,7 +39,7 @@ def historia():
     cena2.direita=cena3
     cena3.esquerda=cena2
     
-    cena4= Cena(img = linkporta4)
+    cena4= Cena(img = linkporta1)
     behelit = Elemento(img =linkbehelit, tit="behelit",style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
     txtbehelit = Texto(cena4,"Ola")
@@ -47,6 +47,7 @@ def historia():
     
     cena3.direita=cena4
     cena4.esquerda=cena3
+    
     
     
     cena1.vai()
