@@ -12,7 +12,7 @@ linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?201101192
 linkporta3 = " https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-28_at_17.14.57_1.jpeg?disp=inline"
 linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=inline"
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
-#linkoppenheimer =""
+linkoppenheimer ="https://activufrj.nce.ufrj.br/file/pedropeclat/Oppenheimer.png?disp=inline"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
@@ -69,6 +69,17 @@ def historia():
     
     cena5.direita=cena6
     cena6.esquerda=cena5
+    
+    cena7 = Cena (img = linkporta4)
+    oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    oppenheimer.entra(cena7)
+    txtoppenheimer = Texto(cena7,"Existe uma teoria que diz que, se um dia alguém descobrir exatamente para que serve o Universo e por que ele está aqui, ele desaparecerá instantaneamente e será substituído por algo ainda mais estranho e inexplicável. Existe uma segunda teoria que diz que isso já aconteceu")
+    oppenheimer.vai = txtoppenheimer.vai
+    
+    
+    cena6.direita=cena7
+    cena7.esquerda=cena6
+    
     
     cena1.vai()
     
