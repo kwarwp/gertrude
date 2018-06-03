@@ -17,10 +17,10 @@ linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2E
 linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
 
 def historia():
-    galaxia = cena(img = linkBackdropcena)
-    marilyn = elemento(img = linkmarilyn,tit="marilyn")
+    galaxia = Cena(img = linkBackdropcena)
+    marilyn = Elemento(img = linkmarilyn,tit="marilyn")
     marilyn.entra(galaxia)
-    txtmarilyn = texto(galaxia,"Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
+    txtmarilyn = Texto(galaxia,"Ola, eu sou a ideia do bem e do mal.Esse e um jogo de escolhas, sobre a breve historia da humanidade.Para prosseguir, clique no universo.")
     marilyn.vai=txtmarilyn.vai
     galaxia.vai
 
