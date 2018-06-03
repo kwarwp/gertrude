@@ -59,7 +59,16 @@ def historia():
     madoka.vai = txtmadoka.vai
     
     cena4.direita=cena5
-    cena5.equerda=cena4
+    cena5.esquerda=cena4
+    
+    cena6 = Cena (img = linkporta3)
+    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    hipatia.entra(cena6)
+    txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
+    hipatia.entra = txthipatia.vai
+    
+    cena5.direita=cena6
+    cena6.esquerda=cena5
     
     cena1.vai()
     
