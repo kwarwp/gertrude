@@ -21,7 +21,7 @@ def historia():
     cena1 = Cena(img = linkBackdropcena)
     marilyn = Elemento(img = linkmarilyn,tit="marilyn", style = dict(right= 100, top=90, width= 200,bottom=100,))
     marilyn.entra(cena1)
-    txtmarilyn = Texto(cena1,"Ola, eu sou a ideia do bem e do mal. Esse eh um jogo de escolhas sobre a breve historia da humanidade.Para prosseguir, clique a direita no universo e para voltar clique a esquerda.")
+    txtmarilyn = Texto(cena1,"Ola, eu sou a ideia do bem e do mal. Esse eh um jogo de narrativo sobre a breve historia da humanidade.Para prosseguir, clique a direita no universo e para voltar clique a esquerda.")
     marilyn.vai=txtmarilyn.vai
     cena1.vai()
      
@@ -41,6 +41,15 @@ def historia():
     
     cena2.direita=cena3
     cena3.esquerda=cena2
+    
+    cena4 = Cena (img = linkporta1)
+    behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
+    behelit.entra(cena4)
+    txtbehelit = Texto (cena4, "Esse eh um quadro de Gustave Dore, o nome dele eh The War Against Gibeon.")
+    behelit.vai = txtbehelit.vai
+    
+    cena3.direita = cena4
+    cena4.equerda = cena3
     
     cena1.vai()
     
