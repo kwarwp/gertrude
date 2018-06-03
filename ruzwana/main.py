@@ -15,7 +15,7 @@ linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=i
 linkbehelit ="https://vignette.wikia.nocookie.net/evil/images/3/3f/The_Behelit.jpg/revision/latest?cb=20151110185922"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkgatocosmico = "http://i.imgur.com/RgaBeG7.png"
-linkseta = "http://jointeffortmarketing.com/wp-content/uploads/2014/09/black-arrow.png"
+linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
 
 def historia():
     cena1 = Cena(img = linkBackdropcena)
@@ -35,6 +35,8 @@ def historia():
     cena2.esquerda = cena1
     
     cena3 = Cena(img = linkportasparauniversos)
+    porta = Elemento(img = linkporta,tit = "porta",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    porta.entra(cena3)
     cena3.vai
     
     cena2.direita=cena3
