@@ -1,4 +1,4 @@
-from _spy.vitollino.main import Cena, Elemento, Texto 
+from _spy.vitollino.main import Cena, Elemento, Texto
 
 linkBackdropcena = "https://universoracionalista.org/wp-content/uploads/2017/05/galaxias.jpg"
 linkmarilyn = "https://activufrj.nce.ufrj.br/file/pedropeclat/Mwindow.png?disp=inline"
@@ -45,8 +45,8 @@ def historia():
     txtbehelit = Texto(cena4,"Ola")
     behelit.vai = txtbehelit.vai
     
-    cena3.direita=cena4
-    cena4.esquerda=cena3
+    cena3.leste=cena4
+    cena4.oeste=cena3
     
     
     
