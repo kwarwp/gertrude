@@ -10,7 +10,7 @@ linkporta1 = "https://activufrj.nce.ufrj.br/file/pedropeclat/Dore.jpg?disp=inlin
 #linkporta2 =
 linkmadoka = "https://images.puella-magi.net/c/ca/Madoka_main_page.png?20110119201909"
 #linkporta3 =
-#linkhipatia =
+linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=inline"
 #linkporta4 =
 linkbehelit ="https://vignette.wikia.nocookie.net/evil/images/3/3f/The_Behelit.jpg/revision/latest?cb=20151110185922"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
@@ -26,9 +26,9 @@ def historia():
     cena1.vai()
      
     cena2= Cena(img = linkdeepspace)
-    merlin = Elemento (img = linkmerlin,tit="merlin", style = dict(right= 100, top=90, width= 115,bottom=20,))
+    merlin = Elemento (img = linkmerlin,tit="merlin", style = dict(left= 100, top=90, width= 115,bottom=20,))
     merlin.entra(cena2)
-    txtmerlin = Texto(cena2,"O Hubble Ultra Deep Field eh uma imagem de uma pequena regiao do espaco, na constelacao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004. Ela eh a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.")
+    txtmerlin = Texto(cena2,"O Hubble Ultra Deep Field eh uma imagem de uma pequena regiao do espaco, na constelacao de Fornax, composta por dados do Telescopio Espacial Hubble, 3 de setembro de 2003 a 16 de janeiro de 2004. Ela eh a imagem mais profunda do universo tirada em luz visivel, ilustrando o universo tal como ele era a 13 bilhoeses de anos atras.Venha um pouco mais perto")
     merlin.vai = txtmerlin.vai
     
     cena1.direita = cena2
