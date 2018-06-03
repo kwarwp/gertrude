@@ -34,6 +34,12 @@ def historia():
     cena1.direita = cena2
     cena2.esquerda = cena1
     
+    cena3 = Cena(img = linkportasparauniversos)
+    cena3.vai()
+    
+    cena2.direita=cena3
+    cena3.esquerda=cena2
+    
     cena1.vai()
     
 historia()
