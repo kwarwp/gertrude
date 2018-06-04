@@ -43,7 +43,8 @@ def historia():
     cena3 = Cena(img = linkportasparauniversos)
     porta = Elemento(img = linkporta,tit = "porta",style = dict(left= 100, top=90, width= 115,bottom=20,))
     porta.entra(cena3)
-    cena3.vai
+    txtporta = Texto(cena3, "Os cafundó de judas")
+    porta.vai = txtporta.vai
     
     cena2.direita=cena3
     cena3.esquerda=cena2
@@ -51,7 +52,7 @@ def historia():
     cena4 = Cena (img = linkporta1)
     behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
-    txtbehelit = Texto (cena4, "Ali, naquele palido cenario... É um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caçadores e coletores a imperadores e reis.(ps :Esse eh um quadro de Gustave Dore,The War Against Gibeon.Eu adoro ele rsrsrs)")
+    txtbehelit = Texto (cena4, "Ali, naquele palido cenario... Ã um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caÃ§adores e coletores a imperadores e reis.(ps :Esse eh um quadro de Gustave Dore,The War Against Gibeon.Eu adoro ele rsrsrs)")
     behelit.vai = txtbehelit.vai
     
     
@@ -70,7 +71,7 @@ def historia():
     cena6 = Cena (img = linkporta6)
     morty = Elemento ( img = linkmorty,tit = "morty",style = dict(right= 80, top=260, width= 115,bottom=20,))
     morty.entra(cena6)
-    txtmorty = Texto (cena6,"Seu futuro foi construído sob o ombro de gigantes. Todas as grandes naçoes do passado influenciaram o surgimento das naçoes que hoje dominam tal mundo.")
+    txtmorty = Texto (cena6,"Seu futuro foi construÃ­do sob o ombro de gigantes. Todas as grandes naÃ§oes do passado influenciaram o surgimento das naÃ§oes que hoje dominam tal mundo.")
     morty.vai = txtmorty.vai
     
     cena5.direita=cena6
@@ -79,7 +80,7 @@ def historia():
     cena7 = Cena(img =linkporta7)
     garnet = Elemento (img = linkgarnet, tit= "garnet", style = dict(right= 80, top=150, width= 115,bottom=20,))
     garnet.entra(cena7)
-    txtgarnet = Texto(cena7, "E e claro, todos tinham sua propria ideia de bem, de mal e de deus. Incontaveis crueldades foram perpetradas em defesa e expansao de tais ideias. Mas tambem, grandes avanços e belissimas obras foram feitas em funçao das mesmas ideias.( ps:tbm adoro essa obra <3)")
+    txtgarnet = Texto(cena7, "E e claro, todos tinham sua propria ideia de bem, de mal e de deus. Incontaveis crueldades foram perpetradas em defesa e expansao de tais ideias. Mas tambem, grandes avanÃ§os e belissimas obras foram feitas em funÃ§ao das mesmas ideias.( ps:tbm adoro essa obra <3)")
     garnet.vai = txtgarnet.vai
     
     cena6.direita=cena7
@@ -89,7 +90,7 @@ def historia():
     cena8 = Cena (img = linkporta2)
     madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(right= 80, top=145, width= 115,bottom=20,))
     madoka.entra(cena8)
-    txtmadoka = Texto (cena8, "Esse eh parthenon. Foi um templo dedicado a deusa grega Atena, construido no seculo V a.C. na Acropole de Atenas, na Grécia Antiga, por iniciativa de Pericles, governante da cidade. O Partenon é um símbolo duradouro da Grécia e da democracia, e é visto como um dos maiores monumentos culturais da história da humanidade. O nome Partenon deriva da estátua de Atena Partenos.")   
+    txtmadoka = Texto (cena8, "Esse eh parthenon. Foi um templo dedicado a deusa grega Atena, construido no seculo V a.C. na Acropole de Atenas, na GrÃ©cia Antiga, por iniciativa de Pericles, governante da cidade. O Partenon Ã© um sÃ­mbolo duradouro da GrÃ©cia e da democracia, e Ã© visto como um dos maiores monumentos culturais da histÃ³ria da humanidade. O nome Partenon deriva da estÃ¡tua de Atena Partenos.")   
     madoka.vai = txtmadoka.vai
     
     cena7.direita=cena8
@@ -98,7 +99,7 @@ def historia():
     cena9 = Cena (img = linkporta3)
     hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
     hipatia.entra(cena9)
-    txthipatia = Texto (cena9, "Esse eh um quadro da Hilma af Klint, Group IX/SU. A artista sueca Hilma af Klint (1862–1944) foi uma mulher enigmatica, viveu de maneira simples e ascetica, não casou, não seguiu o padrao de sua epoca e pertenceu a uma das primeiras gerações de mulheres educadas na Academia Real de Artes de Estocolmo.Para alguns ela era uma bruxa, para outros ela foi a pioneira da arte abstrata")
+    txthipatia = Texto (cena9, "Esse eh um quadro da Hilma af Klint, Group IX/SU. A artista sueca Hilma af Klint (1862â1944) foi uma mulher enigmatica, viveu de maneira simples e ascetica, nÃ£o casou, nÃ£o seguiu o padrao de sua epoca e pertenceu a uma das primeiras geraÃ§Ãµes de mulheres educadas na Academia Real de Artes de Estocolmo.Para alguns ela era uma bruxa, para outros ela foi a pioneira da arte abstrata")
     hipatia.vai = txthipatia.vai
     
     cena8.direita=cena9
@@ -108,7 +109,7 @@ def historia():
     cena10 = Cena (img = linkporta4)
     oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
     oppenheimer.entra(cena10)
-    txtoppenheimer = Texto(cena10,"Existe uma teoria que diz que, se um dia alguém descobrir exatamente para que serve o Universo e por que ele está aqui, ele desaparecerá instantaneamente e será substituído por algo ainda mais estranho e inexplicável. Existe uma segunda teoria que diz que isso já aconteceu")
+    txtoppenheimer = Texto(cena10,"Existe uma teoria que diz que, se um dia alguÃ©m descobrir exatamente para que serve o Universo e por que ele estÃ¡ aqui, ele desaparecerÃ¡ instantaneamente e serÃ¡ substituÃ­do por algo ainda mais estranho e inexplicÃ¡vel. Existe uma segunda teoria que diz que isso jÃ¡ aconteceu")
     oppenheimer.vai = txtoppenheimer.vai
     
     
