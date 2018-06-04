@@ -15,7 +15,7 @@ linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b
 linkoppenheimer ="https://activufrj.nce.ufrj.br/file/pedropeclat/Oppenheimer.png?disp=inline"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkbojackesarahlynn=" https://activufrj.nce.ufrj.br/file/pedropeclat/21-bojack-11.png?disp=inline"
-linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
+linkporta = "https://activufrj.nce.ufrj.br/file/pedropeclat/porta-de-madeira-aberta-no-branco-1658578.png?disp=inline"
 linkporta5 = "https://activufrj.nce.ufrj.br/file/pedropeclat/ae546a495e29ec5de4e18e63dbe68bab.jpg?disp=inline"
 linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c808f0de97bc0a8c.jpg?disp=inline"
 linkporta7 = "https://activufrj.nce.ufrj.br/file/pedropeclat/circle_of_angels_dantes_paradise_illustration.jpg?disp=inline"
@@ -49,7 +49,7 @@ def historia():
     cena4 = Cena (img = linkporta1)
     behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
-    txtbehelit = Texto (cena4, "(Esse eh um quadro de Gustave Dore,The War Against Gibeon.)Ali, naquele palido cenario... É um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caçadores e coletores a imperadores e reis")
+    txtbehelit = Texto (cena4, "Ali, naquele palido cenario... É um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caçadores e coletores a imperadores e reis.(ps :Esse eh um quadro de Gustave Dore,The War Against Gibeon.Eu adoro ele rsrsrs)")
     behelit.vai = txtbehelit.vai
     
     
@@ -57,7 +57,11 @@ def historia():
     cena4.esquerda = cena3
     
     cena5 = Cena (img = linkporta5)
-    
+    lemongrab= Elemento ( img = linklemongrab, tit = "lemongrab",style = dict(right= 80, top=145, width= 115,bottom=20,))
+    lemongrab.entra(cena5)
+    txtlemongrab = Texto(cena5,"A agricultura modificou seu estilo de vida, propiciou o surgimento de imperios em regioes ferteis: Sumerios, Assirios, Babilonicos, Egipcios.  Desenvolveram artes, filosofia, sociologia, estrategias militares. Macedonicos, Gregos, Romanos. Apesar de antigos, tais imperios e sociedades marcaram a face deste pequeno planeta azul.")
+    lemongrab.vai = txtlemongrab.vai
+
     cena4.direita=cena5
     cena5.esquerda=cena4
     
@@ -84,7 +88,7 @@ def historia():
     cena9 = Cena (img = linkporta3)
     hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
     hipatia.entra(cena9)
-    txthipatia = Texto (cena9, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
+    txthipatia = Texto (cena9, "Esse eh um quadro da Hilma af Klint, Group IX/SU. A artista sueca Hilma af Klint (1862–1944) foi uma mulher enigmatica, viveu de maneira simples e ascetica, não casou, não seguiu o padrao de sua epoca e pertenceu a uma das primeiras gerações de mulheres educadas na Academia Real de Artes de Estocolmo.Para alguns ela era uma bruxa, para outros ela foi a pioneira da arte abstrata")
     hipatia.vai = txthipatia.vai
     
     cena8.direita=cena9
@@ -102,6 +106,8 @@ def historia():
     cena10.esquerda=cena9
     
     cena11 = Cena (img =linkbojackesarahlynn)
+    txtcena11 = Texto (cena11,"aaaaaaaaaaaaaaaa")
+    txtcena11.vai
     
     cena10.direita=cena11
     cena11.esquerda=cena10
