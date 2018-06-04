@@ -21,7 +21,7 @@ linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c80
 linkporta7 = "https://activufrj.nce.ufrj.br/file/pedropeclat/circle_of_angels_dantes_paradise_illustration.jpg?disp=inline"
 linklemongrab = "https://activufrj.nce.ufrj.br/file/pedropeclat/flat1000x1000075f.png?disp=inline"
 linkmorty = " https://activufrj.nce.ufrj.br/file/pedropeclat/tSXBaPj4.png?disp=inline"
-linkgarnet = " "
+linkgarnet = " https://activufrj.nce.ufrj.br/file/pedropeclat/2cff9ee246b07e6123b326b98b6b119e.png?disp=inline"
 
 def historia():
     cena1 = Cena(img = linkBackdropcena)
@@ -59,7 +59,7 @@ def historia():
     cena4.esquerda = cena3
     
     cena5 = Cena (img = linkporta5)
-    lemongrab= Elemento ( img = linklemongrab, tit = "lemongrab",style = dict(right= 80, top=145, width= 115,bottom=20,))
+    lemongrab= Elemento ( img = linklemongrab, tit = "lemongrab",style = dict(right= 120, top=145, width= 115,bottom=20,))
     lemongrab.entra(cena5)
     txtlemongrab = Texto(cena5,"A agricultura modificou seu estilo de vida, propiciou o surgimento de imperios em regioes ferteis: Sumerios, Assirios, Babilonicos, Egipcios.  Desenvolveram artes, filosofia, sociologia, estrategias militares. Macedonicos, Gregos, Romanos. Apesar de antigos, tais imperios e sociedades marcaram a face deste pequeno planeta azul.")
     lemongrab.vai = txtlemongrab.vai
@@ -77,6 +77,10 @@ def historia():
     cena6.esquerda=cena5
     
     cena7 = Cena(img =linkporta7)
+    garnet = Elemento (img = linkgarnet, tit= "garnet", style = dict(right= 80, top=150, width= 115,bottom=20,))
+    garnet.entra(cena7)
+    txtgarnet = Texto(cena7, "E e claro, todos tinham sua propria ideia de bem, de mal e de deus. Incontaveis crueldades foram perpetradas em defesa e expansao de tais ideias. Mas tambem, grandes avanços e belissimas obras foram feitas em funçao das mesmas ideias.( ps:tbm adoro essa obra <3)")
+    garnet.vai = txtgarnet.vai
     
     cena6.direita=cena7
     cena7.esquerda=cena6
