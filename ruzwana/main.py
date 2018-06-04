@@ -41,7 +41,7 @@ def historia():
     cena2.esquerda = cena1
     
     cena3 = Cena(img = linkportasparauniversos)
-    porta = Elemento(img = linkporta,tit = "porta",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    porta = Elemento(img = linkporta,tit = "porta",style = dict(left= 100, top=50, width= 115,bottom=20,))
     porta.entra(cena3)
     txtporta = Texto(cena3, " Existe uma teoria que diz que, se um dia alguem descobrir exatamente para que serve o Universo e por que ele estao aqui, ele desaparecera instantaneamente e sera substituido por algo ainda mais estranho e inexplicavel. Existe uma segunda teoria que diz que isso ja aconteceu.")
     porta.vai = txtporta.vai
@@ -60,7 +60,7 @@ def historia():
     cena4.esquerda = cena3
     
     cena5 = Cena (img = linkporta5)
-    lemongrab= Elemento ( img = linklemongrab, tit = "lemongrab",style = dict(right= 120, top=145, width= 115,bottom=20,))
+    lemongrab= Elemento ( img = linklemongrab, tit = "lemongrab",style = dict(right= 100, top=235, width= 80,bottom=100,))
     lemongrab.entra(cena5)
     txtlemongrab = Texto(cena5,"A agricultura modificou seu estilo de vida, propiciou o surgimento de imperios em regioes ferteis: Sumerios, Assirios, Babilonicos, Egipcios.  Desenvolveram artes, filosofia, sociologia, estrategias militares. Macedonicos, Gregos, Romanos. Apesar de antigos, tais imperios e sociedades marcaram a face deste pequeno planeta azul.")
     lemongrab.vai = txtlemongrab.vai
@@ -107,7 +107,7 @@ def historia():
     
     
     cena10 = Cena (img = linkporta4)
-    oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=300, width= 115,bottom=20,))
     oppenheimer.entra(cena10)
     txtoppenheimer = Texto(cena10,"No inicio, o universo foi criado. Isso irritou profundamente muitas pessoas e, no geral, foi encarado como uma pessima ideia.")
     oppenheimer.vai = txtoppenheimer.vai
