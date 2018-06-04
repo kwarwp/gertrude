@@ -43,7 +43,7 @@ def historia():
     cena3 = Cena(img = linkportasparauniversos)
     porta = Elemento(img = linkporta,tit = "porta",style = dict(left= 100, top=90, width= 115,bottom=20,))
     porta.entra(cena3)
-    txtporta = Texto(cena3, "Os cafundÃ³ de judas")
+    txtporta = Texto(cena3, " “Existe uma teoria que diz que, se um dia alguem descobrir exatamente para que serve o Universo e por que ele está aqui, ele desaparecera instantaneamente e sera substituído por algo ainda mais estranho e inexplicavel. Existe uma segunda teoria que diz que isso ja aconteceu.”")
     porta.vai = txtporta.vai
     
     cena2.direita=cena3
@@ -52,7 +52,7 @@ def historia():
     cena4 = Cena (img = linkporta1)
     behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
-    txtbehelit = Texto (cena4, "Ali, naquele palido cenario... ÃÂ um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caÃÂ§adores e coletores a imperadores e reis.(ps :Esse eh um quadro de Gustave Dore,The War Against Gibeon.Eu adoro ele rsrsrs)")
+    txtbehelit = Texto (cena4, "Ali, naquele palido cenario... Eh um pequeno palco onde uma especie vem se desenvolvendo durante anos, de cacadores e coletores ah imperadores e reis.(ps :Esse eh um quadro de Gustave Dore,The War Against Gibeon.Eu adoro ele rsrsrs)")
     behelit.vai = txtbehelit.vai
     
     
