@@ -14,7 +14,7 @@ linkhipatia ="https://activufrj.nce.ufrj.br/file/pedropeclat/image001.png?disp=i
 linkporta4 ="https://activufrj.nce.ufrj.br/file/pedropeclat/39a95f77f7d60c9d383b2e63d5db83b8.jpg?disp=inline"
 linkoppenheimer ="https://activufrj.nce.ufrj.br/file/pedropeclat/Oppenheimer.png?disp=inline"
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
-linkbojackesarahlynn=" https://activufrj.nce.ufrj.br/file/pedropeclat/21-bojack-11.png?disp=inline"
+linkbojackesarahlynn=" https://activufrj.nce.ufrj.br/file/pedropeclat/21-boack-11.w710.png?disp=inline"
 linkporta = "https://activufrj.nce.ufrj.br/file/pedropeclat/porta-de-madeira-aberta-no-branco-1658578.png?disp=inline"
 linkporta5 = "https://activufrj.nce.ufrj.br/file/pedropeclat/ae546a495e29ec5de4e18e63dbe68bab.jpg?disp=inline"
 linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c808f0de97bc0a8c.jpg?disp=inline"
