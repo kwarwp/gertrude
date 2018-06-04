@@ -16,6 +16,9 @@ linkoppenheimer ="https://activufrj.nce.ufrj.br/file/pedropeclat/Oppenheimer.png
 linkend ="https://ia.media-imdb.com/images/M/MV5BNWM0OWRlNzctZDU5NS00ZDAzLWFkY2EtNDUxNjAxMjQ1ZWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTY3Mzc2OTY@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
 linkbojackesarahlynn=" https://activufrj.nce.ufrj.br/file/pedropeclat/21-bojack-11.png?disp=inline"
 linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GTPqTytc/s1600/door_3.png"
+linkporta5 = "https://activufrj.nce.ufrj.br/file/pedropeclat/ae546a495e29ec5de4e18e63dbe68bab.jpg?disp=inline"
+linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c808f0de97bc0a8c.jpg?disp=inline"
+linkporta7 = "https://activufrj.nce.ufrj.br/file/pedropeclat/circle_of_angels_dantes_paradise_illustration.jpg?disp=inline"
 
 def historia():
     cena1 = Cena(img = linkBackdropcena)
@@ -48,42 +51,59 @@ def historia():
     txtbehelit = Texto (cena4, "(Esse eh um quadro de Gustave Dore,The War Against Gibeon.)Ali, naquele palido cenario... É um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caçadores e coletores a imperadores e reis")
     behelit.vai = txtbehelit.vai
     
+    
     cena3.direita = cena4
     cena4.esquerda = cena3
     
-    
-    cena5 = Cena (img = linkporta2)
-    madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(right= 80, top=145, width= 115,bottom=20,))
-    madoka.entra(cena5)
-    txtmadoka = Texto (cena5, "Esse eh parthenon. Foi um templo dedicado a deusa grega Atena, construido no seculo V a.C. na Acropole de Atenas, na Grécia Antiga, por iniciativa de Pericles, governante da cidade. O Partenon é um símbolo duradouro da Grécia e da democracia, e é visto como um dos maiores monumentos culturais da história da humanidade. O nome Partenon deriva da estátua de Atena Partenos.")   
-    madoka.vai = txtmadoka.vai
+    cena5 = Cena (img = linkporta5)
     
     cena4.direita=cena5
     cena5.esquerda=cena4
     
-    cena6 = Cena (img = linkporta3)
-    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
-    hipatia.entra(cena6)
-    txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
-    hipatia.vai = txthipatia.vai
+    cena6 = Cena (img = linkporta6)
     
     cena5.direita=cena6
     cena6.esquerda=cena5
     
-    cena7 = Cena (img = linkporta4)
-    oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
-    oppenheimer.entra(cena7)
-    txtoppenheimer = Texto(cena7,"Existe uma teoria que diz que, se um dia alguém descobrir exatamente para que serve o Universo e por que ele está aqui, ele desaparecerá instantaneamente e será substituído por algo ainda mais estranho e inexplicável. Existe uma segunda teoria que diz que isso já aconteceu")
-    oppenheimer.vai = txtoppenheimer.vai
-    
+    cena7 = Cena(img =linkporta7)
     
     cena6.direita=cena7
     cena7.esquerda=cena6
     
-    cena8 = Cena (img =linkbojackesarahlynn)
+    
+    cena8 = Cena (img = linkporta2)
+    madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(right= 80, top=145, width= 115,bottom=20,))
+    madoka.entra(cena8)
+    txtmadoka = Texto (cena8, "Esse eh parthenon. Foi um templo dedicado a deusa grega Atena, construido no seculo V a.C. na Acropole de Atenas, na Grécia Antiga, por iniciativa de Pericles, governante da cidade. O Partenon é um símbolo duradouro da Grécia e da democracia, e é visto como um dos maiores monumentos culturais da história da humanidade. O nome Partenon deriva da estátua de Atena Partenos.")   
+    madoka.vai = txtmadoka.vai
     
     cena7.direita=cena8
     cena8.esquerda=cena7
+    
+    cena9 = Cena (img = linkporta3)
+    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
+    hipatia.entra(cena9)
+    txthipatia = Texto (cena9, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
+    hipatia.vai = txthipatia.vai
+    
+    cena8.direita=cena9
+    cena9.esquerda=cena8
+    
+    
+    cena10 = Cena (img = linkporta4)
+    oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    oppenheimer.entra(cena10)
+    txtoppenheimer = Texto(cena10,"Existe uma teoria que diz que, se um dia alguém descobrir exatamente para que serve o Universo e por que ele está aqui, ele desaparecerá instantaneamente e será substituído por algo ainda mais estranho e inexplicável. Existe uma segunda teoria que diz que isso já aconteceu")
+    oppenheimer.vai = txtoppenheimer.vai
+    
+    
+    cena9.direita=cena10
+    cena10.esquerda=cena9
+    
+    cena11 = Cena (img =linkbojackesarahlynn)
+    
+    cena10.direita=cena11
+    cena11.esquerda=cena10
     
     
     cena1.vai()
