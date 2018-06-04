@@ -109,7 +109,7 @@ def historia():
     cena10 = Cena (img = linkporta4)
     oppenheimer = Elemento (linkoppenheimer, tit = "oppenheimer",style = dict(left= 100, top=90, width= 115,bottom=20,))
     oppenheimer.entra(cena10)
-    txtoppenheimer = Texto(cena10,"Existe uma teoria que diz que, se um dia alguÃÂ©m descobrir exatamente para que serve o Universo e por que ele estÃÂ¡ aqui, ele desaparecerÃÂ¡ instantaneamente e serÃÂ¡ substituÃÂ­do por algo ainda mais estranho e inexplicÃÂ¡vel. Existe uma segunda teoria que diz que isso jÃÂ¡ aconteceu")
+    txtoppenheimer = Texto(cena10,"“No início, o universo foi criado. Isso irritou profundamente muitas pessoas e, no geral, foi encarado como uma péssima idéia.")
     oppenheimer.vai = txtoppenheimer.vai
     
     
