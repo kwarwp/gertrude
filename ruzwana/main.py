@@ -45,7 +45,7 @@ def historia():
     cena4 = Cena (img = linkporta1)
     behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
-    txtbehelit = Texto (cena4, "Esse eh um quadro de Gustave Dore, o nome dele eh The War Against Gibeon.")
+    txtbehelit = Texto (cena4, "(Esse eh um quadro de Gustave Dore,The War Against Gibeon.)")
     behelit.vai = txtbehelit.vai
     
     cena3.direita = cena4
@@ -55,14 +55,14 @@ def historia():
     cena5 = Cena (img = linkporta2)
     madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(right= 80, top=145, width= 115,bottom=20,))
     madoka.entra(cena5)
-    txtmadoka = Texto (cena5, "Esse eh parthenon")   
+    txtmadoka = Texto (cena5, "Esse eh parthenon. Foi um templo dedicado a deusa grega Atena, construido no seculo V a.C. na Acropole de Atenas, na Grécia Antiga, por iniciativa de Pericles, governante da cidade. O Partenon é um símbolo duradouro da Grécia e da democracia, e é visto como um dos maiores monumentos culturais da história da humanidade. O nome Partenon deriva da estátua de Atena Partenos.")   
     madoka.vai = txtmadoka.vai
     
     cena4.direita=cena5
     cena5.esquerda=cena4
     
     cena6 = Cena (img = linkporta3)
-    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 100, top=180, width= 115,bottom=20,))
+    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
     hipatia.entra(cena6)
     txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
     hipatia.entra = txthipatia.vai
