@@ -20,6 +20,8 @@ linkporta5 = "https://activufrj.nce.ufrj.br/file/pedropeclat/ae546a495e29ec5de4e
 linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c808f0de97bc0a8c.jpg?disp=inline"
 linkporta7 = "https://activufrj.nce.ufrj.br/file/pedropeclat/circle_of_angels_dantes_paradise_illustration.jpg?disp=inline"
 linklemongrab = "https://activufrj.nce.ufrj.br/file/pedropeclat/flat1000x1000075f.png?disp=inline"
+linkmorty = " https://activufrj.nce.ufrj.br/file/pedropeclat/tSXBaPj4.png?disp=inline"
+linkgarnet = " "
 
 def historia():
     cena1 = Cena(img = linkBackdropcena)
@@ -66,6 +68,10 @@ def historia():
     cena5.esquerda=cena4
     
     cena6 = Cena (img = linkporta6)
+    morty = Elemento ( img = linkmorty,tit = "morty",style = dict(right= 80, top=260, width= 115,bottom=20,))
+    morty.entra(cena6)
+    txtmorty = Texto (cena6,"Seu futuro foi construído sob o ombro de gigantes. Todas as grandes naçoes do passado influenciaram o surgimento das naçoes que hoje dominam tal mundo.")
+    morty.vai = txtmorty.vai
     
     cena5.direita=cena6
     cena6.esquerda=cena5
