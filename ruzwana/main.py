@@ -19,6 +19,7 @@ linkporta = "http://3.bp.blogspot.com/-i30OEIMf2Hk/URlDvN5bbcI/AAAAAAAAAhI/pO2GT
 linkporta5 = "https://activufrj.nce.ufrj.br/file/pedropeclat/ae546a495e29ec5de4e18e63dbe68bab.jpg?disp=inline"
 linkporta6 = "https://activufrj.nce.ufrj.br/file/pedropeclat/2d8213ffeae68105c808f0de97bc0a8c.jpg?disp=inline"
 linkporta7 = "https://activufrj.nce.ufrj.br/file/pedropeclat/circle_of_angels_dantes_paradise_illustration.jpg?disp=inline"
+linklemongrab = "https://activufrj.nce.ufrj.br/file/pedropeclat/flat1000x1000075f.png?disp=inline"
 
 def historia():
     cena1 = Cena(img = linkBackdropcena)
