@@ -65,7 +65,7 @@ def historia():
     hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 80, top=180, width= 115,bottom=20,))
     hipatia.entra(cena6)
     txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
-    hipatia.entra = txthipatia.vai
+    hipatia.vai = txthipatia.vai
     
     cena5.direita=cena6
     cena6.esquerda=cena5
