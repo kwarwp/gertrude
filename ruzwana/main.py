@@ -53,7 +53,7 @@ def historia():
     
     
     cena5 = Cena (img = linkporta2)
-    madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(left= 100, top=90, width= 115,bottom=20,))
+    madoka = Elemento (img = linkmadoka, tit = "madoka",style = dict(right= 80, top=145, width= 115,bottom=20,))
     madoka.entra(cena5)
     txtmadoka = Texto (cena5, "Esse eh parthenon")   
     madoka.vai = txtmadoka.vai
@@ -62,7 +62,7 @@ def historia():
     cena5.esquerda=cena4
     
     cena6 = Cena (img = linkporta3)
-    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 180, top=180, width= 115,bottom=20,))
+    hipatia = Elemento (img = linkhipatia, tit ="hipatia",style = dict(left= 100, top=180, width= 115,bottom=20,))
     hipatia.entra(cena6)
     txthipatia = Texto (cena6, "Esse eh um quadro da Hilma af Klint, Group IX/SU")
     hipatia.entra = txthipatia.vai
