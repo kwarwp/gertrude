@@ -45,7 +45,7 @@ def historia():
     cena4 = Cena (img = linkporta1)
     behelit = Elemento (img = linkbehelit, tit = "behelit", style = dict(left= 100, top=90, width= 115,bottom=20,))
     behelit.entra(cena4)
-    txtbehelit = Texto (cena4, "(Esse eh um quadro de Gustave Dore,The War Against Gibeon.)")
+    txtbehelit = Texto (cena4, "(Esse eh um quadro de Gustave Dore,The War Against Gibeon.)Ali, naquele palido cenario... É um pequeno palco onde uma especie vem se desenvolvendo durante anos, de caçadores e coletores a imperadores e reis")
     behelit.vai = txtbehelit.vai
     
     cena3.direita = cena4
