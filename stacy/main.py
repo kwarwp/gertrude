@@ -1,6 +1,10 @@
 # gertrude.stacy.main.py
 from _spy.vitollino.main import *
 
+PERSONAGEM = {
+	'cena1' : []
+}
+
 class Personagem:
 
 	def __init__(self, nome = '', posicao = dict(top=100, left=20, bottom=20, height=150, width=70), fala = '', img = ''):
@@ -27,3 +31,6 @@ class Cena:
 		for o in objetos : o.getObjeto().entra(self.__cena);
 
 	def vai(self): self.__cena.vai();
+    
+def iniciar():
+	pass;
