@@ -6,9 +6,14 @@ class Personagem:
 	def __init__(self, nome = '', cena = '', posicao = dict(top=100, left=20, bottom=20, height=150, width=70), fala = '', img = ''):
 		if len(fala) == 0:
 			texto = Texto(cena, fala);
-			self.__personagem = Elemento(img = img, cena = cena, trt = nome, style = posicao, vai = texto.vai);
+			self.__personagem = Elemento(img = img, trt = nome, style = posicao, vai = texto.vai);
 		else:
-			self.__personagem = Elemento(img = img, cena = cena, trt = nome, style = posicao);
+			self.__personagem = Elemento(img = img, trt = nome, style = posicao);
 	
 	def getPersonagem(self): return self.__personagem;
-      
+
+class Cena:
+
+	def __init__(self, background, score, elementos, personagem):
+		self.__cena = Cena(img = background);
+		personagem.entra(self.__cena);
