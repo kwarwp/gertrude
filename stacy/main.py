@@ -10,5 +10,5 @@ class Personagem:
 		else:
 			self.__personagem = Elemento(img = img, cena = cena, trt = nome, style = posicao);
 	
-	def getPersonagem(self):
-		return self.__personagem;    
+	def getPersonagem(self): return self.__personagem;
+      
