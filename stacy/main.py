@@ -3,7 +3,7 @@ from _spy.vitollino.main import *
 
 class Personagem:
 
-	def __init__(self, nome = '', cena = '', posicao = dict(top=100, left=20, bottom=20, height=150, width=70), fala = '', img = ''):
+	def __init__(self, nome = '', posicao = dict(top=100, left=20, bottom=20, height=150, width=70), fala = '', img = ''):
 		if len(fala) == 0:
 			texto = Texto(cena, fala);
 			self.__personagem = Elemento(img = img, trt = nome, style = posicao, vai = texto.vai);
@@ -14,6 +14,9 @@ class Personagem:
 
 class Cena:
 
-	def __init__(self, background, score, elementos, personagem):
+	def __init__(self, background, score, elementos, personagens = []):
 		self.__cena = Cena(img = background);
-		personagem.entra(self.__cena);
+		for p in personagens: p.getPersonagem().entra(self.__cena);
+		for e in elementos : e.getElemento().entra(self.__cena);
+
+	def vai(self): self.__cena.vai();
