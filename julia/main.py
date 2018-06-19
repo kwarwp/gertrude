@@ -21,6 +21,7 @@ IMG = {
 class Lago:
 	# Constrói a cena com os objetos e as ações de cada objeto
 	def __init__(self):
+
 		# Inicia o inventário
 		INVENTARIO.inicia();
         
@@ -33,10 +34,10 @@ class Lago:
 		seta = Elemento(img=IMG['seta'], cena=self.__lago, trt="Seguir em frente", style=dict(top=80, left=160, bottom=20, width=30))
         
 	# Coloca a moeda piscante no inventário
-	def __vaiMoedaPiscante(self,_=0): INVENTARIO.bota(self.__moedaPiscante)      
+	def __vaiMoedaPiscante(self, _=0): INVENTARIO.bota(self.__moedaPiscante)      
 
 	# Coloca a moeda normal no inventário
-	def __vaiMoeda(self,_=0): INVENTARIO.bota(self.__moeda)
+	def __vaiMoeda(self, _=0): INVENTARIO.bota(self.__moeda)
 		#self.__moeda.vai = vaiMoeda
 		#self.__moeda.entra(self.__lago)
 
