@@ -1,4 +1,6 @@
 # gertrude.julia.main.py
+
+# Importando a biblioteca do Vitollino
 from _spy.vitollino.main import *
 
 # Configuração da largura e altura da cena
