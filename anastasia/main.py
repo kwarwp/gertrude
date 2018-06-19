@@ -22,7 +22,7 @@ class Lago:
 	def __init__(self):
 
 		# Inicia o inventario
-		#INVENTARIO.inicia();
+		INVENTARIO.inicia();
         
 		# Cria a cena
 		self.__lago = Cena(img = IMG['background']);
@@ -37,8 +37,6 @@ class Lago:
 
 	# Coloca a moeda normal no inventario
 	def __vaiMoeda(self, _=0): INVENTARIO.bota(self.__moeda)
-		#self.__moeda.vai = vaiMoeda
-		#self.__moeda.entra(self.__lago)
 
 	# Executa a cena
 	def vai(self): self.__lago.vai();
