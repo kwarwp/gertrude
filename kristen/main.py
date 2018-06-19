@@ -1,5 +1,5 @@
 from _spy.vitollino.main import *
-from anastasia.main import Lago
+from anastasia.main import *
 
 ################################################TAKE1##########################################################
 
@@ -18,7 +18,7 @@ class Entrada:
 
 		entrada = Cena(img = IMG['background']);
 		aviso = Texto(entrada, "O portao esta trancado");
-		pixacao = Elemento(img = IMG['pixacao'], cena=entrada, vai=Lago().vai(), style = dict(left=0, top=95,height= '505px', width= 250,bottom=20));
+		pixacao = Elemento(img = IMG['pixacao'], cena=entrada, vai=Lago().vai, style = dict(left=0, top=95,height= '505px', width= 250,bottom=20));
 		portao = Elemento(img = IMG['portao'], cena=entrada, vai=aviso.vai, style = dict(left= 215, top=0,height= '600px', width= 575,bottom=0))
 		entrada.vai();
 
