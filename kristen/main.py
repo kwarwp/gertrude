@@ -1,5 +1,6 @@
+# gertrude.kristen.main.py
 from _spy.vitollino.main import *
-from anastasia.main import *
+from anastasia.main import Lago
 
 ################################################TAKE1##########################################################
 
@@ -16,10 +17,11 @@ class Entrada:
 
 	def __init__(self):
 
-		entrada = Cena(img = IMG['background']);
-		aviso = Texto(entrada, "O portao esta trancado");
-		pixacao = Elemento(img = IMG['pixacao'], cena=entrada, vai=Lago().vai, style = dict(left=0, top=95,height= '505px', width= 250,bottom=20));
-		portao = Elemento(img = IMG['portao'], cena=entrada, vai=aviso.vai, style = dict(left= 215, top=0,height= '600px', width= 575,bottom=0))
-		entrada.vai();
+		self.__entrada = Cena(img = IMG['background']);
+		aviso = Texto(self.__entrada, "O portao esta trancado");
+		portao = Elemento(img = IMG['portao'], cena=self.__entrada, vai=aviso.vai, style = dict(left= 215, top=0,height= '600px', width= 575,bottom=0))
+		pixacao = Elemento(img = IMG['pixacao'], cena=self.__entrada, vai=Lago().vai, style = dict(left=0, top=95,height= '505px', width= 250,bottom=20));
 
-Entrada();
+	def vai(self): self.__entrada.vai();
+
+Entrada().vai();
