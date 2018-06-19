@@ -15,10 +15,16 @@ class Lago:
 	def __init__(self):
 		INVENTARIO.inicia();
 		self.__lago = Cena(img = IMG['background']);
-		moedaPiscante = Elemento(img=IMG['moeda_piscante'], cena=self.__lago, trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
-		moeda = Elemento(img=IMG['moeda'], cena=self.__lago, trt="Moeda Piscante", style=dict(top=150, left=220, bottom=20, height=150, width=70))
-		seta = Elemento(img=IMG['seta'], cena=self.__lago, trt="Telefone", style=dict(top=80, left=160, bottom=20, width=30))
-		moeda.vai = INVENTARIO.bota        
+		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], vai=self.__vaiMoedaPiscante, cena=self.__lago, trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
+		self.__moeda = Elemento(img=IMG['moeda'], vai=self.__vaiMoeda, cena=self.__lago, trt="Moeda Piscante", style=dict(top=150, left=220, bottom=20, height=150, width=70))
+		seta = Elemento(img=IMG['seta'], cena=self.__lago, trt="Seguir em frente", style=dict(top=80, left=160, bottom=20, width=30))
+        
+	def __vaiMoedaPiscante(self,_=0): INVENTARIO.bota(self.__moedaPiscante)      
+
+	def __vaiMoeda(self,_=0): INVENTARIO.bota(self.__moeda)
+		#self.__moeda.vai = vaiMoeda
+		#self.__moeda.entra(self.__lago)
+        
 	def vai(self): self.__lago.vai();
     
 l = Lago();
