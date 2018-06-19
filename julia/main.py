@@ -1,9 +1,12 @@
 # gertrude.julia.main.py
 from _spy.vitollino.main import *
+
+# Configuração da largura e altura da cena
 STYLE["width"] = 1000
 STYLE["height"] = "600px"
 
 '''-----Take 2-----'''
+
 # Criando um dicionário com as imagens
 IMG = {
        'background' : 'https://media-cdn.tripadvisor.com/media/photo-s/07/34/b1/37/parque-do-japao.jpg',
