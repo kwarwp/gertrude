@@ -1,5 +1,7 @@
 # gertrude.julia.main.py
 from _spy.vitollino.main import *
+STYLE["width"] = 1000
+STYLE["height"] = "600px"
 
 #Take 2
 IMG = {
@@ -11,11 +13,12 @@ IMG = {
 
 class Lago:
 	def __init__(self):
+		INVENTARIO.inicia();
 		self.__lago = Cena(img = IMG['background']);
 		moedaPiscante = Elemento(img=IMG['moeda_piscante'], cena=self.__lago, trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
 		moeda = Elemento(img=IMG['moeda'], cena=self.__lago, trt="Moeda Piscante", style=dict(top=150, left=220, bottom=20, height=150, width=70))
 		seta = Elemento(img=IMG['seta'], cena=self.__lago, trt="Telefone", style=dict(top=80, left=160, bottom=20, width=30))
-        
+		moeda.vai = INVENTARIO.bota        
 	def vai(self): self.__lago.vai();
     
 l = Lago();
