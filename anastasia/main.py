@@ -1,5 +1,6 @@
 # gertrude.anastasia.main.py
 ##############################################TAKE2############################################################
+
 # Importando a biblioteca do Vitollino
 from _spy.vitollino.main import *
 
