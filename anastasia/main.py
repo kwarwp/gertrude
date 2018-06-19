@@ -40,3 +40,4 @@ class Lago:
 
 	# Executa a cena
 	def vai(self): self.__lago.vai();
+Lago().vai()
