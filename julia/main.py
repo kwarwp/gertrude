@@ -3,7 +3,8 @@ from _spy.vitollino.main import *
 STYLE["width"] = 1000
 STYLE["height"] = "600px"
 
-#Take 2
+'''-----Take 2-----'''
+#Criando um dicionário com as imagens
 IMG = {
        'background' : 'https://media-cdn.tripadvisor.com/media/photo-s/07/34/b1/37/parque-do-japao.jpg',
        'moeda_piscante' : 'http://3.bp.blogspot.com/-xxHdoS90xwo/VR1jjtJUh1I/AAAAAAAAQAI/1Sw0A7IliUw/s1600/Coin%2B4.gif',
@@ -11,7 +12,9 @@ IMG = {
        'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
        }
 
+#Cria a classe da cena
 class Lago:
+	#Constrói a cena com os objetos e as ações de cada objeto
 	def __init__(self):
 		INVENTARIO.inicia();
 		self.__lago = Cena(img = IMG['background']);
