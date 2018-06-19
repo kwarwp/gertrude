@@ -22,7 +22,7 @@ class Lago:
 	def __init__(self):
 
 		# Inicia o inventario
-		INVENTARIO.inicia();
+		#INVENTARIO.inicia();
         
 		# Cria a cena
 		self.__lago = Cena(img = IMG['background']);
