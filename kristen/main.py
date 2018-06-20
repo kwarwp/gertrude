@@ -24,7 +24,7 @@ class Entrada:
 
 		# Funcoes
 		portao.vai = aviso.vai;
-		pixacao.vai = Lago().vai;
+		pixacao.vai = Lago.vai;
         
 		# Anexando elementos na cena
 		portao.entra(self.__entrada);
