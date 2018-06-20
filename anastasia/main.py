@@ -20,18 +20,25 @@ IMG = {
 class Lago:
 	# Construindo a cena com os objetos e as funcoes de cada objeto
 	def __init__(self):
-
-		# Inicia o inventario
-		INVENTARIO.inicia();
         
 		# Cria a cena
 		self.__lago = Cena(img = IMG['background']);
         
-		# Cria os objetos da cena juntamente com suas funcoes
-		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], vai=self.__vaiMoedaPiscante, cena=self.__lago, trt="Guarda Chuva", style=dict(top=100, left=170, bottom=20, height=150, width=70))
-		self.__moeda = Elemento(img=IMG['moeda'], vai=self.__vaiMoeda, cena=self.__lago, trt="Moeda Piscante", style=dict(top=150, left=220, bottom=20, height=150, width=70))
-		seta = Elemento(img=IMG['seta'], cena=self.__lago, trt="Seguir em frente", style=dict(top=80, left=160, bottom=20, width=30))
+		# Cria os objetos da cena
+		INVENTARIO.inicia(); # Inicia o inventario
+		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], style=dict(top=100, left=170, bottom=20, width=70));
+		self.__moeda = Elemento(img=IMG['moeda'], style=dict(top=150, left=220, bottom=20, width=70));
+		seta = Elemento(img=IMG['seta'], trt="Seguir em frente", style=dict(top=80, left=160, bottom=20, width=30));
+
+		# Funcoes
+		self.__moedaPiscante.vai = self.__vaiMoedaPiscante;
+		self.__moeda.vai = self.__vaiMoeda;
         
+		# Adicionando a Cena
+		self.__moedaPiscante.entra(self.__lago);
+		self.__moeda.entra(self.__lago);
+		seta.entra(self.__lago);
+
 	# Coloca a moeda piscante no inventario
 	def __vaiMoedaPiscante(self, _=0): INVENTARIO.bota(self.__moedaPiscante)      
 
@@ -40,4 +47,3 @@ class Lago:
 
 	# Executa a cena
 	def vai(self): self.__lago.vai();
-Lago().vai()
