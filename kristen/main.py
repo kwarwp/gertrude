@@ -15,10 +15,19 @@ class Entrada:
 
 	def __init__(self):
 
+		# Criando elementos
 		self.__entrada = Cena(img = IMG['background']);
+		portao = Elemento(img = IMG['portao'], style = dict(left= 215, top=0, width= 575,bottom=0));
+		pixacao = Elemento(img = IMG['pixacao'], style = dict(left=0, top=95, width= 100,bottom=20));
 		aviso = Texto(self.__entrada, "O portao esta trancado");
-		portao = Elemento(img = IMG['portao'], cena=self.__entrada, vai=aviso.vai, style = dict(left= 215, top=0,height= '600px', width= 575,bottom=0))
-		pixacao = Elemento(img = IMG['pixacao'], cena=self.__entrada, vai=Lago().vai, style = dict(left=0, top=95, width= 100,bottom=20));
+
+		# Funcoes
+		portao.vai = aviso.vai;
+		pixacao.vai = Lago().vai;
+        
+		# Anexando elementos na cena
+		portao.entra(self.__entrada);
+		pixacao.entra(self.__entrada);
 
 	def vai(self): self.__entrada.vai();
 
