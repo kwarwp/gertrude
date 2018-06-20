@@ -1,5 +1,6 @@
 # gertrude.kristen.main.py
 ################################################TAKE1##########################################################
+
 from _spy.vitollino.main import *
 from anastasia.main import Lago
 STYLE['width'] = 1000
