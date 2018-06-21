@@ -11,8 +11,8 @@ STYLE["height"] = "600px"
 # Criando um dicionario com as imagens
 IMG = {
 	'background' : 'https://media-cdn.tripadvisor.com/media/photo-s/07/34/b1/37/parque-do-japao.jpg',
-	'moeda_piscante' : 'http://3.bp.blogspot.com/-xxHdoS90xwo/VR1jjtJUh1I/AAAAAAAAQAI/1Sw0A7IliUw/s1600/Coin%2B4.gif',
-	'moeda' : 'https://cdn.icon-icons.com/icons2/651/PNG/512/Icon_Business_Set_00003_A_icon-icons.com_59841.png',
+	'moeda_piscante' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_7_5942055903.png?disp=inline',
+	'moeda' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_9_9462807394.png?disp=inline',
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
 }
 
@@ -26,9 +26,9 @@ class Lago:
         
 		# Cria os objetos da cena
 		INVENTARIO.inicia(); # Inicia o inventario
-		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], style=dict(top=100, left=170, bottom=20, width=70));
-		self.__moeda = Elemento(img=IMG['moeda'], style=dict(top=150, left=220, bottom=20, width=70));
-		seta = Elemento(img=IMG['seta'], trt="Seguir em frente", style=dict(top=80, left=160, bottom=20, width=30));
+		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], style=dict(top=450, left=500, bottom=20, width=150));
+		self.__moeda = Elemento(img=IMG['moeda'], style=dict(top=450, left=700, bottom=20, width=150));
+		seta = Elemento(img=IMG['seta'], trt="Seguir em frente", style=dict(top=195, left=575, bottom=20, width=30));
 
 		# Funcoes
 		self.__moedaPiscante.vai = self.__vaiMoedaPiscante;
@@ -47,3 +47,5 @@ class Lago:
 
 	# Executa a cena
 	def vai(self): self.__lago.vai();
+    
+Lago().vai();
