@@ -46,4 +46,7 @@ class Lago:
 	def __vaiMoeda(self, _=0): INVENTARIO.bota(self.__moeda)
 
 	# Executa a cena
-	def vai(self): self.__lago.vai();
+	def vai(self): 
+		self.__lago.vai()
+        
+Lago().vai()
