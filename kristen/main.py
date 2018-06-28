@@ -14,7 +14,7 @@ IMG = {
 }
 
 SOUNDS = {
-	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/364663__jmiddlesworth__bird-call-in-spring.mp3?disp=inline'
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/330860__andre-onate__indra-call.wav?disp=inline'
 }
 
 class Entrada:
