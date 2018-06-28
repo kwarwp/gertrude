@@ -13,6 +13,10 @@ IMG = {
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
 }
 
+SOUNDS = {
+	'background' : ''
+}
+
 class Entrada:
 
 	def __init__(self):
@@ -23,6 +27,7 @@ class Entrada:
 		self.__mapa = Elemento(img = IMG['mapa'], style = dict(left=240, top=300, height='80px', width=60, bottom=0, border='3px solid brown'));
 		pixacao = Elemento(img = IMG['pixacao'], style = dict(left=0, top=95, width= 100,bottom=20));
 		aviso = Texto(self.__entrada, "O portao esta trancado");
+		Musica(sound = SOUNDS['background']);
 
 		# Funcoes
 		portao.vai = aviso.vai;
