@@ -8,6 +8,7 @@ STYLE['height'] = "600px"
 
 IMG = {
 	'background' : 'https://media-cdn.tripadvisor.com/media/photo-s/07/94/9a/9a/primeiro-portao-instalado.jpg',
+	'mapa' : '',
 	'pixacao' : 'https://i0.wp.com/www.heversonbarbosa.com/wp-content/uploads/2017/05/home-seta.png',
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
 }
