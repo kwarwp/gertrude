@@ -46,3 +46,10 @@ class Lago:
 
 	# Executa a cena
 	def vai(self, *_): self.__lago.vai()
+    
+def go_lago():
+  cena_lago = Lago()
+  cena_lago.vai()
+
+if __name__ == "__main__":
+	go_lago()
