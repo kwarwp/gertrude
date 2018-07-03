@@ -20,7 +20,7 @@ class Menu:
 
 		# Criando elementos
 		self.__menu = Cena();
-		start = Elemento(img = IMG['start'], style = dict(left=0, top=95, width= 100,bottom=20));
+		start = Elemento(img = IMG['start'], style = dict(left=500, top=300, width= 100,bottom=20));
 		Musica(sound = SOUNDS['background']);
 
 		# Funcoes
