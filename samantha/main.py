@@ -1,25 +1,34 @@
-from _spy.vitollino.main import Cena, Texto, Elemento, STYLE
-from _spy.vitollino.main import INVENTARIO as inv
+# gertrude.samantha.main.py
+################################################TAKE1##########################################################
 
-from soraya.main import Bloco
-from browser import alert
+from _spy.vitollino.main import *
+from kristen.main import Entrada
+STYLE['width'] = 1000
+STYLE['height'] = "600px"
 
+IMG = {
+	'start' : 'https://i0.wp.com/www.heversonbarbosa.com/wp-content/uploads/2017/05/home-seta.png'
+}
 
-STYLE["width"] = 600
-STYLE["height"] = "600px"
+SOUNDS = {
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/330860__andre-onate__indra-call.wav?disp=inline'
+}
 
-#############################################TAKE0#######################################################
+class Menu:
 
-BACKG1 = "http://galvaoweb.com.br/escolas_01/wp-content/uploads/2017/02/01-patio.jpg"
-P1N = "https://vignette.wikia.nocookie.net/phineasferb/images/4/40/Perry_-_Imagem_Promocional_%2826%29.png"
-P2 = "https://vignette.wikia.nocookie.net/phineasferb/images/4/40/Perry_-_Imagem_Promocional_%2826%29.png"
-P3 = "https://vignette.wikia.nocookie.net/phineasferb/images/4/40/Perry_-_Imagem_Promocional_%2826%29.png"
+	def __init__(self):
 
-def Take0():
-    backgr =Cena(img=BACKG1)
-    narrador=  Elemento (img=P1N, style=dict (left=95, top= 100, height=100, width=100, bottom=15))
-    personagem1 =  Elemento (img=P2, style=dict (left=95, top= 100, height=100, width=100, bottom=15))
-    personagem2 =  Elemento (img=P3, style=dict (left=95, top= 100, height=100, width=100, bottom=15))
-    narrador.personagem1.personagem2.entra(backgr)
-    
-    Take.vai()
+		# Criando elementos
+		self.__entrada = Cena();
+		start = Elemento(img = IMG['start'], style = dict(left=0, top=95, width= 100,bottom=20));
+		Musica(sound = SOUNDS['background']);
+
+		# Funcoes
+		start.vai = Entrada().vai;
+        
+		# Anexando elementos na cena
+		start.entra(self.__entrada);
+
+	def vai(self): self.__entrada.vai();
+
+Menu().vai();
