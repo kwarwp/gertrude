@@ -19,7 +19,7 @@ class Menu:
 	def __init__(self):
 
 		# Criando elementos
-		self.__entrada = Cena();
+		self.__menu = Cena();
 		start = Elemento(img = IMG['start'], style = dict(left=0, top=95, width= 100,bottom=20));
 		Musica(sound = SOUNDS['background']);
 
@@ -27,8 +27,8 @@ class Menu:
 		start.vai = Entrada().vai;
         
 		# Anexando elementos na cena
-		start.entra(self.__entrada);
+		start.entra(self.__menu);
 
-	def vai(self): self.__entrada.vai();
+	def vai(self): self.__menu.vai();
 
 Menu().vai();
