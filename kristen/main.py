@@ -7,7 +7,7 @@ STYLE['width'] = 1000
 STYLE['height'] = "600px"
 
 IMG = {
-	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/digitalizar0001.jpg?disp=inline',
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/35788257_1787410928014659_8815247365167382528_n.png?disp=inline',
 	'mapa' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/original.jpg?disp=inline',
 	'pixacao' : 'https://i0.wp.com/www.heversonbarbosa.com/wp-content/uploads/2017/05/home-seta.png',
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
