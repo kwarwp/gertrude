@@ -10,7 +10,7 @@ STYLE["height"] = "600px"
 
 # Criando um dicionario com as imagens
 IMG = {
-	'background' : 'https://media-cdn.tripadvisor.com/media/photo-s/07/34/b1/37/parque-do-japao.jpg',
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/digitalizar0003.png?disp=inline',
 	'moeda_piscante' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_7_5942055903.png?disp=inline',
 	'moeda' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_9_9462807394.png?disp=inline',
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
