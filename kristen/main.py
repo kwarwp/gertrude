@@ -41,4 +41,4 @@ class Entrada:
 
 	def __vaiMapa(self, _=0): INVENTARIO.bota(self.__mapa)
 
-	def vai(self): self.__entrada.vai();
+	def vai(self, *_): self.__entrada.vai();
