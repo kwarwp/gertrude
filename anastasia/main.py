@@ -25,8 +25,8 @@ class Lago:
 		self.__lago = Cena(img = IMG['background']);
         
 		# Cria os objetos da cena
-		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], style=dict(top=450, left=500, bottom=20, width=150));
-		self.__moeda = Elemento(img=IMG['moeda'], style=dict(top=450, left=700, bottom=20, width=150));
+		self.__moedaPiscante = Elemento(img=IMG['moeda_piscante'], style=dict(top=450, left=250, bottom=20, width=150));
+		self.__moeda = Elemento(img=IMG['moeda'], style=dict(top=450, left=350, bottom=20, width=150));
 		seta = Elemento(img=IMG['seta'], trt="Seguir em frente", style=dict(top=195, left=575, bottom=20, width=30));
 
 		# Funcoes
