@@ -12,8 +12,10 @@ STYLE["height"] = "600px"
 IMG = {
 	'aleia1' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',
 	'aleia2' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
+	'aleia3' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',    
 	'passarinho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
 	'ninho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
+	'macaco': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/srmacaco2.png?disp=inline',    
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
 }
 
@@ -61,16 +63,17 @@ class Aleia3:
 	def __init__(self):
          
 		# Criando elementos
-		self.__aleia3 = Cena(img = IMG['aleia2']);
-        
-		Texto(self.__aleia3, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+		self.__aleia3 = Cena(img = IMG['aleia3']);
+		macaco = Elemento(img=IMG['macaco'], style=dict(top=300, left=300, bottom=20, width=150));
 
 		# Funcoes
+		macaco.vai = Texto(self.__aleia3, u'Se eu fosse vocês eu seguiria em frente até a guarita, lá voces vao poder se alimentar e recuperar o folego').vai;
         
 		# Anexando elementos na cena
+		macaco.entra(self.__aleia3);
 
 	def vai(self, *_): self.__aleia3.vai();
 
 # Aleia().vai()
 # Aleia2().vai()
-# Aleia3().vai()
+Aleia3().vai()
