@@ -11,7 +11,7 @@ IMG = {
 }
 
 SOUNDS = {
-	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/330860__andre-onate__indra-call.wav?disp=inline'
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bia.mp4?disp=inline'
 }
 
 class Menu:
