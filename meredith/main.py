@@ -45,12 +45,4 @@ class indef:
 
 	# Executa a cena
 	def vai(self, *_): self.__lago.vai()
-    
-    
-def go_Indef():
-  cena_Indef = indef()
-  cena_Indef.vai()
-
-if __name__ == "__main__":
-	go_Indef()
   
