@@ -40,4 +40,4 @@ class Aleia:
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
 
-# Aleia().vai()
+Aleia().vai()
