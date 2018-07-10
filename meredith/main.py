@@ -1,8 +1,8 @@
 #######################################################TAKE3############################################################
-# gertrude.anastasia.main.py
+# gertrude.meredith.main.py
 # Importando a biblioteca do Vitollino
 from _spy.vitollino.main import *
-from danae.main import Aleia2
+from danae.main import Guarita
 
 # Configuracao da largura e altura da cena
 STYLE["width"] = 1000
@@ -10,7 +10,8 @@ STYLE["height"] = "600px"
 
 # Criando um dicionario com as imagens
 IMG = {
-	'background' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',
+	'aleia1' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',
+	'aleia2' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
 	'passarinho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
 	'ninho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
@@ -22,7 +23,7 @@ class Aleia:
 	def __init__(self):
         
 		# Cria a cena
-		self.__aleia = Cena(img = IMG['background']);
+		self.__aleia = Cena(img = IMG['aleia1']);
         
 		# Cria os objetos da cena
 		self.__passarinho = Elemento(img=IMG['passarinho'], style=dict(top=430, left=470, bottom=20, width=100));
@@ -40,4 +41,20 @@ class Aleia:
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
 
-Aleia().vai()
+class Aleia2:
+
+	def __init__(self):
+         
+		# Criando elementos
+		self.__aleia2 = Cena(img = IMG['aleia2']);
+        
+		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+
+		# Funcoes
+        
+		# Anexando elementos na cena
+
+	def vai(self, *_): self.__aleia2.vai();
+
+# Aleia().vai()
+# Aleia2().vai()
