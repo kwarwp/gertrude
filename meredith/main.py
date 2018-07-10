@@ -55,6 +55,22 @@ class Aleia2:
 		# Anexando elementos na cena
 
 	def vai(self, *_): self.__aleia2.vai();
+    
+class Aleia3:
+
+	def __init__(self):
+         
+		# Criando elementos
+		self.__aleia3 = Cena(img = IMG['aleia2']);
+        
+		Texto(self.__aleia3, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+
+		# Funcoes
+        
+		# Anexando elementos na cena
+
+	def vai(self, *_): self.__aleia3.vai();
 
 # Aleia().vai()
 # Aleia2().vai()
+# Aleia3().vai()
