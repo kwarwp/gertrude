@@ -1,7 +1,7 @@
 ################################################TAKE4##########################################################
 
 from _spy.vitollino.main import *
-#from anastasia.main import Lago
+from grace.main import Guarita
 STYLE['width'] = 1000
 STYLE['height'] = "600px"
 
@@ -12,10 +12,12 @@ IMG = {
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
 }
 
-class Guarita:
+class Aleia2:
 
 	def __init__(self):
 
+		Texto() 
+         
 		# Criando elementos
 		self.__guarita = Cena(img = IMG['background']);
 
@@ -25,4 +27,4 @@ class Guarita:
 
 	def vai(self, *_): self.__guarita.vai();
     
-Guarita().vai()
+# Guarita().vai()
