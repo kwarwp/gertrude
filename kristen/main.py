@@ -38,4 +38,4 @@ class Entrada:
 
 	def vai(self, *_): self.__entrada.vai();
     
-Entrada().vai()
+# Entrada().vai()
