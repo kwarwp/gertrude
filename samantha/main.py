@@ -11,7 +11,7 @@ IMG = {
 }
 
 SOUNDS = {
-	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bia.mp4?disp=inline'
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bia.mp3?disp=inline'
 }
 
 class Menu:
