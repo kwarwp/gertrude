@@ -2,6 +2,7 @@
 # gertrude.anastasia.main.py
 # Importando a biblioteca do Vitollino
 from _spy.vitollino.main import *
+from danae.main import Aleia2
 
 # Configuracao da largura e altura da cena
 STYLE["width"] = 1000
@@ -28,7 +29,8 @@ class Aleia:
 		self.__ninho = Elemento(img=IMG['ninho'], style=dict(top=100, left=600, bottom=20, width=150));
 		seta = Elemento(img=IMG['seta'], style=dict(top=350, left=380, bottom=20, width=30))        
 
-		# Funcoes        
+		# Funcoes    
+		seta.vai = Aleia2().vai;
         
 		# Adicionando a Cena
 		self.__passarinho.entra(self.__aleia);
