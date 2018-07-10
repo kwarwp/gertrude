@@ -67,7 +67,7 @@ class Aleia3:
 		macaco = Elemento(img=IMG['macaco'], style=dict(top=300, left=300, bottom=20, width=150));
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, u'Se eu fosse vocês eu seguiria em frente até a guarita, lá voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃ© a guarita, lÃ¡ voces vao poder se alimentar e recuperar o folego').vai;
         
 		# Anexando elementos na cena
 		macaco.entra(self.__aleia3);
