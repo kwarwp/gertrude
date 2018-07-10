@@ -1,7 +1,7 @@
 ################################################TAKE4##########################################################
 
 from _spy.vitollino.main import *
-from grace.main import Guarita
+#from anastasia.main import Lago
 STYLE['width'] = 1000
 STYLE['height'] = "600px"
 
@@ -12,19 +12,17 @@ IMG = {
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
 }
 
-class Aleia2:
+class Guarita:
 
 	def __init__(self):
-         
+
 		# Criando elementos
-		self.__aleia2 = Cena(img = IMG['background']);
-        
-		Texto(self.__aleia2, "Letícia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+		self.__guarita = Cena(img = IMG['background']);
 
 		# Funcoes
         
 		# Anexando elementos na cena
 
-	def vai(self, *_): self.__aleia2.vai();
+	def vai(self, *_): self.__guarita.vai();
     
-Aleia2().vai()
+Guarita().vai()
