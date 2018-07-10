@@ -15,16 +15,16 @@ IMG = {
 class Aleia2:
 
 	def __init__(self):
-
-		Texto() 
          
 		# Criando elementos
-		self.__guarita = Cena(img = IMG['background']);
+		self.__aleia2 = Cena(img = IMG['background']);
+        
+		Texto(self.__aleia2, "Letícia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
 
 		# Funcoes
         
 		# Anexando elementos na cena
 
-	def vai(self, *_): self.__guarita.vai();
+	def vai(self, *_): self.__aleia2.vai();
     
-# Guarita().vai()
+Aleia2().vai()
