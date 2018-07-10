@@ -76,4 +76,4 @@ class Aleia3:
 
 # Aleia().vai()
 # Aleia2().vai()
-Aleia3().vai()
+# Aleia3().vai()
