@@ -1,19 +1,29 @@
 # gertrude.grace.main.py
-from _spy.vitollino.main import Cena, Elemento
+################################################TAKE5##########################################################
 
-linkIMG = "http://pre09.deviantart.net/3a5c/th/pre/f/2011/105/c/2/fractal_png_by_elevation_world-d3e2cex.png"
+from _spy.vitollino.main import *
+#from anastasia.main import Lago
+STYLE['width'] = 1000
+STYLE['height'] = "600px"
 
-class Cena2():
-  def __init__(self):
-    linkOlho = "http://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/512/eye-icon.png"
+IMG = {
+	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',
+	'mapa' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/original.jpg?disp=inline',
+	'pixacao' : 'https://i0.wp.com/www.heversonbarbosa.com/wp-content/uploads/2017/05/home-seta.png',
+	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
+}
 
-    self.cena = Cena(img = linkIMG)
-    olho = Elemento(img = linkOlho, style = dict(top = '10', left = '10'))
+class Guarita:
 
-  def vai(self, *_):
-    self.cena.vai()    
-  def connectEsquerda(self, cena):
-    self.cena.esquerda = cena
-  def connectDireita(self, cena):
-    self.cena.direita = cena
+	def __init__(self):
+
+		# Criando elementos
+		self.__guarita = Cena(img = IMG['background']);
+
+		# Funcoes
+        
+		# Anexando elementos na cena
+
+	def vai(self, *_): self.__guarita.vai();
     
+Guarita().vai()
