@@ -33,7 +33,7 @@ class Lago:
 		# Funcoes
 		self.__moedaPiscante.vai = self.__vaiMoedaPiscante;
 		self.__moeda.vai = self.__vaiMoeda;
-		seta.vai = Aleai().vai;        
+		seta.vai = Aleia().vai;        
         
 		# Adicionando a Cena
 		self.__moedaPiscante.entra(self.__lago);
