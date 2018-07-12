@@ -45,10 +45,8 @@ class Aleia:
 		seta.entra(self.__aleia);
 
 	def __saiPassarinho(self, _=0): 
-		Dropper(self.__passarinho);
-		#self.__passarinho.style = dict(left=1000);
-		#self.__passarinho.style.update();
-		#self.__ninho.sai();        
+		self.__passarinho.elt.style = dict(display= 'none');
+		self.__ninho.elt.style = dict(display= 'none');        
 
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
@@ -85,7 +83,7 @@ class Aleia3:
 		seta = Elemento(img=IMG['seta']);
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
 		seta.vai = Guarita().vai;        
         
 		# Anexando elementos na cena
