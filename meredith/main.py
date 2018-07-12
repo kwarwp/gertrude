@@ -18,7 +18,7 @@ IMG = {
 	'maca': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_34_5062328837.png?disp=inline',    
 	'pedra': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_22_9073509179.png?disp=inline',
 	'bengala': '',    
-	'darwin': '',
+	'darwin': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/darwinghost_2.png?disp=inline',
 	'macaco': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/srmacaco2.png?disp=inline',    
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
 }
@@ -49,9 +49,8 @@ class Aleia:
 	def __saiPassarinho(self, _=0): 
 		self.__passarinho.elt.style = dict(display= 'none');
 		self.__ninho.elt.style = dict(display= 'none');
-		ninho = Elemento(img=IMG['seta'], style=dict(top=100, left=600, bottom=20, width=150));
+		ninho = Elemento(img=IMG['seta'], cena=self.__aleia, style=dict(top=100, left=600, bottom=20, width=150));
 		maca = Elemento(img=IMG['maca'], style=dict(top=100, left=600, bottom=20, width=150));
-		ninho.entra(self.__aleia);
 		Texto(self.__aleia, 'Obrigado por colocar meu filho de volta no ninho como recompensa toma aqui essa fruta').vai()
 		INVENTARIO.bota(maca)        
 
@@ -64,11 +63,9 @@ class Aleia2:
          
 		# Criando elementos
 		self.__aleia2 = Cena(img = IMG['aleia2']);
-        
-		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+                
 		self.__bengala = Elemento(img=IMG['bengala']);        
-		self.__pedra = Elemento(img=IMG['pedra']);
-		self.__darwin = Elemento(img=IMG['darwin']);        
+		self.__pedra = Elemento(img=IMG['pedra'], style=dict(left=520, width=800, top=250, bottom=20));      
 
 		# Funcoes
 		self.__aleia2.vai_esquerda = Aleia3().vai;        
@@ -76,8 +73,13 @@ class Aleia2:
 		# Anexando elementos na cena
 		self.__bengala.entra(self.__aleia2);        
 		self.__pedra.entra(self.__aleia2);
-		self.__darwin.entra(self.__aleia2);        
+		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
 
+	def __pegarBengala(self, _=0):
+		self.__bengala.elt.style = dict(diplay='none');
+		Elemento(img=IMG['darwin'], cena=self.__aleia2, style=dict(left=700));          
+		Texto(self.__aleia, 'Devolvam minha bengala|||').vai();
+        
 	def vai(self, *_): self.__aleia2.vai();
     
 class Aleia3:
@@ -90,7 +92,7 @@ class Aleia3:
 		seta = Elemento(img=IMG['seta']);
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente ate voces vao poder se alimentar e recuperar o folego').vai;
 		seta.vai = Guarita().vai;        
         
 		# Anexando elementos na cena
@@ -99,6 +101,6 @@ class Aleia3:
 
 	def vai(self, *_): self.__aleia3.vai();
 
-Aleia().vai()
-# Aleia2().vai()
+# Aleia().vai()
+Aleia2().vai()
 # Aleia3().vai()
