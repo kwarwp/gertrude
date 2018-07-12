@@ -43,3 +43,5 @@ class Menu:
 		nana.entra(self.__menu);
 
 	def vai(self): self.__menu.vai();
+
+# Menu().vai();
