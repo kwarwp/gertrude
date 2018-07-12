@@ -45,8 +45,8 @@ class Aleia:
 		seta.entra(self.__aleia);
 
 	def __saiPassarinho(self): 
-		self.__passarinho.sai();
-		self.__ninho.sai();        
+		self.__passarinho.sai(self.__aleia);
+		self.__ninho.sai(self.__aleia);        
 
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
@@ -92,6 +92,6 @@ class Aleia3:
 
 	def vai(self, *_): self.__aleia3.vai();
 
-# Aleia().vai()
+Aleia().vai()
 # Aleia2().vai()
 # Aleia3().vai()
