@@ -10,7 +10,7 @@ LEKES= "http://3.bp.blogspot.com/-_JxmohXYIHI/Ud89A7TrTHI/AAAAAAAABQY/RGp-9STuc2
 def cena3():
 
     fundo1 = Cena(img=PATIO)
-    lekes = Elemento(img=LEKES)
+    lekes = Elemento(img=LEKES, style = dict(top = 50,right = 500, height = '250px' , width = 200))
 
     lekes.entra(fundo1)
     fundo1.vai()
