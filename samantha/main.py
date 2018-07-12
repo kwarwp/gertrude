@@ -25,12 +25,21 @@ class Menu:
 		# Criando elementos
 		self.__menu = Cena();
 		start = Elemento(img = IMG['start'], style = dict(left=500, top=300, width= 100,bottom=20));
+		lekes = Elemento(img=LEKES, style = dict(top = 50,right = 500, height = '250px' , width = 200))
+		nana = Elemento(img=NANA, style = dict(top = 300,left = 510, height = '250px' , width = 180))
+		leticia = Elemento(img=LETICIA, style = dict(top = 300,left = 400, height = '250px' , width = 200))        
 		Musica(sound = SOUNDS['background']);
 
 		# Funcoes
 		start.vai = Entrada().vai;
+		lekes.vai=Texto(self.__menu ,"AndrÃÂ©- Cara, vocÃÂª ouviu que o Jardim BotÃÂ¢nico estÃÂ¡ em manutenÃÂ§ÃÂ£o?    Matheus- Sim, fiquei sabendo que coisas estranhas vem acontecendo lÃÂ¡!").vai
+		nana.vai=Texto(self.__menu,"Nana- Mas vocÃÂª ÃÂ© curiosa ein, e eu tambÃÂ©mÃ¢ÂÂ¦ Vamos!").vai
+		leticia.vai=Texto(self.__menu,"LetÃÂ­cia- Miga, vocÃÂª viu que tem algo acontecendo no Jardim? Vamos lÃÂ¡ ver?").vai
         
 		# Anexando elementos na cena
 		start.entra(self.__menu);
+		lekes.entra(self.__menu);
+		leticia.entra(self.__menu);
+		nana.entra(self.__menu);
 
 	def vai(self): self.__menu.vai();
