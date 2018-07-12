@@ -3,6 +3,7 @@
 
 # Importando a biblioteca do Vitollino
 from _spy.vitollino.main import *
+from meredith.main import Aleia
 
 # Configuracao da largura e altura da cena
 STYLE["width"] = 1000
@@ -32,6 +33,7 @@ class Lago:
 		# Funcoes
 		self.__moedaPiscante.vai = self.__vaiMoedaPiscante;
 		self.__moeda.vai = self.__vaiMoeda;
+		seta.vai = Aleai().vai;        
         
 		# Adicionando a Cena
 		self.__moedaPiscante.entra(self.__lago);
