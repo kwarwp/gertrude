@@ -83,6 +83,7 @@ class Aleia3:
         
 		# Anexando elementos na cena
 		macaco.entra(self.__aleia3);
+		seta.entra(self.__aleia3);
 
 	def vai(self, *_): self.__aleia3.vai();
 
