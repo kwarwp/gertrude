@@ -15,7 +15,8 @@ IMG = {
 	'aleia3': 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',    
 	'passarinho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
 	'ninho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
-	'pedra': '',
+	'maca': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_34_5062328837.png?disp=inline',    
+	'pedra': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_22_9073509179.png?disp=inline',
 	'bengala': '',    
 	'darwin': '',
 	'macaco': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/srmacaco2.png?disp=inline',    
@@ -44,11 +45,15 @@ class Aleia:
 		self.__ninho.entra(self.__aleia);
 		seta.entra(self.__aleia);
 
+	# Coloca o passarinho no ninho    
 	def __saiPassarinho(self, _=0): 
 		self.__passarinho.elt.style = dict(display= 'none');
 		self.__ninho.elt.style = dict(display= 'none');
-		Elemento(img=IMG['seta'], style=dict(top=100, left=600, bottom=20, width=150)).entra(self.__aleia);
-		        
+		ninho = Elemento(img=IMG['seta'], style=dict(top=100, left=600, bottom=20, width=150));
+		maca = Elemento(img=IMG['maca'], style=dict(top=100, left=600, bottom=20, width=150));
+		ninho.entra(self.__aleia);
+		Texto(self.__aleia, 'Obrigado por colocar meu filho de volta no ninho como recompensa toma aqui essa fruta').vai()
+		INVENTARIO.bota(maca)        
 
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
@@ -85,7 +90,7 @@ class Aleia3:
 		seta = Elemento(img=IMG['seta']);
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
 		seta.vai = Guarita().vai;        
         
 		# Anexando elementos na cena
