@@ -10,11 +10,14 @@ STYLE["height"] = "600px"
 
 # Criando um dicionario com as imagens
 IMG = {
-	'aleia1' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',
-	'aleia2' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
-	'aleia3' : 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',    
-	'passarinho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
-	'ninho' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
+	'aleia1': 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',
+	'aleia2': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
+	'aleia3': 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',    
+	'passarinho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
+	'ninho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
+	'pedra': '',
+	'bengala': '',    
+	'darwin': '',
 	'macaco': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/srmacaco2.png?disp=inline',    
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
 }
@@ -51,10 +54,17 @@ class Aleia2:
 		self.__aleia2 = Cena(img = IMG['aleia2']);
         
 		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
+		self.__bengala = Elemento(img=IMG['bengala']);        
+		self.__pedra = Elemento(img=IMG['pedra']);
+		self.__darwin = Elemento(img=IMG['darwin']);        
 
 		# Funcoes
+		self.aleia2.vai_esquerda = Aleia3().vai;        
         
 		# Anexando elementos na cena
+		self.__bengala.entra(self.__aleia2);        
+		self.__pedra.entra(self.__aleia2);
+		self.__darwin.entra(self.__aleia2);        
 
 	def vai(self, *_): self.__aleia2.vai();
     
@@ -67,7 +77,7 @@ class Aleia3:
 		macaco = Elemento(img=IMG['macaco'], style=dict(top=300, left=300, bottom=20, width=150));
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃ© a guarita, lÃ¡ voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂ© a guarita, lÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
         
 		# Anexando elementos na cena
 		macaco.entra(self.__aleia3);
