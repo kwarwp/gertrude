@@ -68,7 +68,7 @@ class Aleia2:
 		self.__pedra = Elemento(img=IMG['pedra'], style=dict(left=520, width=800, top=250, bottom=20));      
 
 		# Funcoes
-		self.__aleia2.vai_esquerda = Aleia3().vai;        
+		self.__aleia2.esquerda = Aleia3();        
         
 		# Anexando elementos na cena
 		self.__bengala.entra(self.__aleia2);        
