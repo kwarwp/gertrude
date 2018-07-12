@@ -36,7 +36,7 @@ class Aleia:
 		seta = Elemento(img=IMG['seta'], style=dict(top=350, left=380, bottom=20, width=30))        
 
 		# Funcoes
-		self.__passarinho.vai = self.__saiPassarinho       
+		self.__passarinho.vai = self.__saiPassarinho      
 		seta.vai = Aleia2().vai;
         
 		# Adicionando a Cena
@@ -45,7 +45,7 @@ class Aleia:
 		seta.entra(self.__aleia);
 
 	def __saiPassarinho(self, _=0): 
-		self.__passarinho.style = dict(left=700);
+		self.__passarinho.style.update(dict(left=1000));
 		#self.__ninho.sai();        
 
 	# Executa a cena
@@ -83,7 +83,7 @@ class Aleia3:
 		seta = Elemento(img=IMG['seta']);
 
 		# Funcoes
-		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
+		macaco.vai = Texto(self.__aleia3, 'Se eu fosse voces eu seguiria em frente atÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© a guarita, lÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ voces vao poder se alimentar e recuperar o folego').vai;
 		seta.vai = Guarita().vai;        
         
 		# Anexando elementos na cena
