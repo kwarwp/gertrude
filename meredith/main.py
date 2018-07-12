@@ -46,7 +46,9 @@ class Aleia:
 
 	def __saiPassarinho(self, _=0): 
 		self.__passarinho.elt.style = dict(display= 'none');
-		self.__ninho.elt.style = dict(display= 'none');        
+		self.__ninho.elt.style = dict(display= 'none');
+		Elemento(img=IMG['seta'], style=dict(top=100, left=600, bottom=20, width=150)).entra(self.__aleia);
+		        
 
 	# Executa a cena
 	def vai(self, *_): self.__aleia.vai()
