@@ -6,7 +6,7 @@ STYLE['width'] = 1000
 STYLE['height'] = "600px"
 
 IMG = {
-	'background' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',
+	'background1' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',
 	'background2' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
 	'cabine': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/guarita.png?disp=inline',
 	'mapa' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/original.jpg?disp=inline',
@@ -19,7 +19,7 @@ class Guarita1:
 	def __init__(self):
 
 		# Criando elementos
-		self.__guarita = Cena(img = IMG['background']);
+		self.__guarita = Cena(img = IMG['background1']);
 		cabine = Elemento(img=IMG['cabine'], style=dict(top=0,bottom=20, width=230, left=57));
 
 		# Funcoes
