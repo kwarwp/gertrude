@@ -65,15 +65,15 @@ class Aleia2:
 		self.__aleia2 = Cena(img = IMG['aleia2']);
                 
 		self.__pedra = Elemento(img=IMG['pedra'], style=dict(left=520, width=800, top=250, bottom=20));      
-		self.__bengala = Elemento(img=IMG['bengala'], style=dict(left=520, top=250, bottom=20));        
+		self.__bengala = Elemento(img=IMG['bengala'], style=dict(left=670, top=270, bottom=20, width=500));        
 
 		# Funcoes
 		self.__bengala.vai = self.__pegarBengala;        
 		self.__aleia2.esquerda = Aleia3();        
         
-		# Anexando elementos na cena
-		self.__bengala.entra(self.__aleia2);        
+		# Anexando elementos na cena        
 		self.__pedra.entra(self.__aleia2);
+		self.__bengala.entra(self.__aleia2);        
 		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
 
 	def __pegarBengala(self, _=0):
