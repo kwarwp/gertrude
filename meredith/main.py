@@ -17,7 +17,7 @@ IMG = {
 	'ninho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
 	'maca': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_34_5062328837.png?disp=inline',    
 	'pedra': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_22_9073509179.png?disp=inline',
-	'bengala': '',    
+	'bengala': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_5_5251419741.png?disp=inline',    
 	'darwin': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/darwinghost_2.png?disp=inline',
 	'macaco': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/srmacaco2.png?disp=inline',    
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
@@ -64,8 +64,8 @@ class Aleia2:
 		# Criando elementos
 		self.__aleia2 = Cena(img = IMG['aleia2']);
                 
-		self.__bengala = Elemento(img=IMG['bengala']);        
 		self.__pedra = Elemento(img=IMG['pedra'], style=dict(left=520, width=800, top=250, bottom=20));      
+		self.__bengala = Elemento(img=IMG['bengala'], style=dict(left=520, top=250, bottom=20));        
 
 		# Funcoes
 		self.__aleia2.esquerda = Aleia3();        
