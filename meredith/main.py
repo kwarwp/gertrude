@@ -68,6 +68,7 @@ class Aleia2:
 		self.__bengala = Elemento(img=IMG['bengala'], style=dict(left=520, top=250, bottom=20));        
 
 		# Funcoes
+		self.__bengala.vai = self.__pegarBengala;        
 		self.__aleia2.esquerda = Aleia3();        
         
 		# Anexando elementos na cena
