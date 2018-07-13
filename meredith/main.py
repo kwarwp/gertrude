@@ -103,5 +103,5 @@ class Aleia3:
 	def vai(self, *_): self.__aleia3.vai();
 
 # Aleia().vai()
-Aleia2().vai()
+# Aleia2().vai()
 # Aleia3().vai()
