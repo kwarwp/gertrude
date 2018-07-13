@@ -15,7 +15,7 @@ IMG = {
 	'background3': 'http://ebendinger.jbrj.gov.br/fotos/75.jpg',    
 	'passarinho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/Bird2.png?disp=inline',
 	'ninho': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_16_2807468112.png?disp=inline',
-	'maca': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_34_5062328837.png?disp=inline',    
+	'maca': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/maca2.png?disp=inline',    
 	'pedra': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_22_9073509179.png?disp=inline',
 	'bengala': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_5_5251419741.png?disp=inline',    
 	'darwin': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/darwinghost_2.png?disp=inline',
@@ -53,8 +53,8 @@ class Aleia1:
 	def __saiPassarinho(self, _=0): 
 		self.__passarinho.elt.style = dict(display= 'none');
 		self.__ninho.elt.style = dict(display= 'none');
-		ninho = Elemento(img=IMG['seta'], cena=self.__aleia1, style=dict(top=100, left=600, bottom=20, width=150));
-		maca = Elemento(img=IMG['maca'], style=dict(top=100, left=600, bottom=20, width=150));
+		maca = Elemento(img=IMG['maca'], style=dict(top=100, left=600, bottom=20, width=150));        
+		Elemento(img=IMG['seta'], cena=self.__aleia1, style=dict(top=100, left=600, bottom=20, width=150));
 		Texto(self.__aleia1, 'Obrigado por colocar meu filho de volta no ninho como recompensa toma aqui essa fruta').vai()
 		INVENTARIO.bota(maca)        
 
