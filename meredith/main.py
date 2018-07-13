@@ -23,6 +23,10 @@ IMG = {
 	'seta' : 'http://ap.imagensbrasil.org/images/PNG-Setadourada.png'
 }
 
+SOUNDS = {
+	'darwin': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/330860__andre-onate__indra-call.wav?disp=inline'
+}
+
 # Cria a classe da cena
 class Aleia:
 	# Construindo a cena com os objetos e as funcoes de cada objeto
@@ -78,6 +82,7 @@ class Aleia2:
 
 	def __pegarBengala(self, _=0):
 		self.__bengala.elt.style = dict(display= 'none');
+		Musica(sound=SOUNDS['darwin'], loop=False);
 		Elemento(img=IMG['darwin'], cena=self.__aleia2, style=dict(left=700));          
 		Texto(self.__aleia2, 'Devolvam minha bengala|||').vai();
         
@@ -103,5 +108,5 @@ class Aleia3:
 	def vai(self, *_): self.__aleia3.vai();
 
 # Aleia().vai()
-# Aleia2().vai()
+Aleia2().vai()
 # Aleia3().vai()
