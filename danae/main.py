@@ -14,7 +14,7 @@ IMG = {
 	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
 }
 
-class Guarita:
+class Guarita1:
 
 	def __init__(self):
 
