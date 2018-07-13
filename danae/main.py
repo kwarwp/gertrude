@@ -28,4 +28,5 @@ class Guarita:
 
 	def vai(self, *_): self.__guarita.vai();
     
-Guarita().vai()
+# Guarita().vai();
+# Guarita2().vai();
