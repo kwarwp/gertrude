@@ -9,9 +9,8 @@ IMG = {
 	'background1' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',
 	'background2' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/36410919_1803508649738220_8839554797003603968_n.png?disp=inline',    
 	'cabine': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/guarita.png?disp=inline',
-	'mapa' : 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/original.jpg?disp=inline',
-	'pixacao' : 'https://i0.wp.com/www.heversonbarbosa.com/wp-content/uploads/2017/05/home-seta.png',
-	'portao' : 'https://activufrj.nce.ufrj.br/file/pedropeclat/1528988110963.png?disp=inline'
+	'maquina_biscoito': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/maquinadebolachakk2.png?disp=inline',
+	'lanterna': 'https://activufrj.nce.ufrj.br/file/GamesInteligentesII/imageedit_26_3323460880.png?disp=inline'    
 }
 
 class Guarita1:
@@ -36,12 +35,19 @@ class Guarita2:
 
 		# Criando elementos
 		self.__guarita2 = Cena(img = IMG['background2']);
-		cabine = Elemento(img=IMG['cabine'], style=dict(top=0,bottom=20, width=230, left=57));
+        
+		self.__lanterna = Elemento(img=IMG['lanterna'], style=dict(top=0,bottom=20, width=230, left=57));
+		self.__maquinaBiscoito = Elemento(img=IMG['maquina_biscoito'], style=dict(top=0,bottom=20, width=230, left=57));
 
 		# Funcoes
+		self.__lanterna.vai = self.__pegarLanterna;
         
 		# Anexando elementos na cena
-		cabine.entra(self.__guarita);
+		self.__lanterna.entra(self.__guarita2);
+		self.__maquinaBiscoito.entra(self.__guarita2);
+        
+	def __pegarLanterna(self, _=0):
+		INVENTARIO.bota(self.__lanterna);
     
 def vai(self, *_): self.__guarita2.vai();
 
