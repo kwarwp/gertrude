@@ -45,5 +45,5 @@ class Guarita2:
     
 def vai(self, *_): self.__guarita2.vai();
 
-# Guarita().vai();
+# Guarita1().vai();
 # Guarita2().vai();
