@@ -77,7 +77,7 @@ class Aleia2:
 		Texto(self.__aleia2, "Leticia: Ai!!! Acho que machuquei minha perna. Vou precisar de algo para poder continuar nossa aventura").vai();        
 
 	def __pegarBengala(self, _=0):
-		self.__bengala.elt.style = dict(diplay='none');
+		self.__bengala.elt.style = dict(display='none');
 		Elemento(img=IMG['darwin'], cena=self.__aleia2, style=dict(left=700));          
 		Texto(self.__aleia, 'Devolvam minha bengala|||').vai();
         
