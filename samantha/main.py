@@ -23,12 +23,12 @@ class Menu:
     def __init__(self):
 
 # Criando elementos
-    self.__menu = Cena(img=IMG['patio']);
-    start = Elemento(img = IMG['start'], style = dict(left=900, top=100, width= 100,bottom=20));
-    lekes = Elemento(img=IMG['lekes'], style = dict(top = 50,right = 500, height = '250px' , width = 200))
-    nana = Elemento(img=IMG['nana'], style = dict(top = 300,left = 510, height = '250px' , width = 180))
-    leticia = Elemento(img=IMG['leticia'], style = dict(top = 300,left = 400, height = '250px' , width = 200))        
-    Musica(sound = SOUNDS['background']);
+        self.__menu = Cena(img=IMG['patio']);
+        start = Elemento(img = IMG['start'], style = dict(left=900, top=100, width= 100,bottom=20));
+        lekes = Elemento(img=IMG['lekes'], style = dict(top = 50,right = 500, height = '250px' , width = 200))
+        nana = Elemento(img=IMG['nana'], style = dict(top = 300,left = 510, height = '250px' , width = 180))
+        leticia = Elemento(img=IMG['leticia'], style = dict(top = 300,left = 400, height = '250px' , width = 200))        
+        Musica(sound = SOUNDS['background']);
 
 # Funcoes
     start.vai = Entrada().vai;
