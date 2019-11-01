@@ -5,6 +5,6 @@ MIDAS="https://images-eu.ssl-images-amazon.com/images/I/913LOf4vO3L.png"
 class sambinha():
     lillapizinho= Elemento(img=LILLAPIZINHO)
     midas= Cena(img=MIDAS)
-    lillapizinho.entra(no midas)
+    lillapizinho.entra(midas)
     midas.vai()
 sambinha()
